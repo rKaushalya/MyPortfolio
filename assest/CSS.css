@@ -1,3 +1,33 @@
 [id="About Me"]{
     color: red;
 }
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 1px 2px 3px -3px black;
+}
+header>nav>menu{
+    position: absolute;
+    top: -2px;
+    right: 115px;
+}
+header>nav>menu>li{
+    display: inline-block;
+    margin: 8px;
+}
+header>nav>menu>li>a{
+    text-decoration: none;
+    color: black;
+}
+header>aside>img{
+    margin-top: 13px;
+    margin-left: 115px;
+}
+main{
+    position: relative;
+    top: 55px;
+}
