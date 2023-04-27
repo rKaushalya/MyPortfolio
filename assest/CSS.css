@@ -31,3 +31,40 @@ main{
     position: relative;
     top: 55px;
 }
+main>:nth-child(1){
+    height: 90vh;
+}
+main>:nth-child(1)>aside>img{
+    position: absolute;
+    right: 230px;
+    top: 136px;
+}
+main>:nth-child(1)>article>:nth-child(1){
+    position: absolute;
+    left: 177px;
+    top: 166px;
+}
+main>:nth-child(1)>article>:nth-child(2){
+    position: absolute;
+    left: 177px;
+    top: 209px;
+}
+main>:nth-child(1)>article>:nth-child(3){
+    position: absolute;
+    left: 177px;
+    top: 259px;
+}
+main>:nth-child(1)>nav>button{
+    position: absolute;
+    left: 177px;
+    top: 326px;
+}
+#sosial{
+    position: absolute;
+    left: 177px;
+    top: 381px;
+}
+main>:nth-child(1)>nav>div{
+    display: inline-block;
+    margin-right: 8px;
+}
