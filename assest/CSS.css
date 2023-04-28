@@ -23,6 +23,10 @@ header>nav>menu>li>a{
     text-decoration: none;
     color: black;
 }
+header>nav>menu>li>a:hover{
+    color: blue;
+    text-decoration: underline;
+}
 header>aside>img{
     margin-top: 13px;
     margin-left: 115px;
