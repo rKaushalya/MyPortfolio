@@ -470,3 +470,51 @@ main>:nth-child(4)>:nth-child(4)>section>img{
     top: 20px;
     left: 22px;
 }
+#Gallery{
+    display: inline-block;
+    position: relative;
+    left: 46%;
+    top: 44px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+}
+main>:nth-child(5)>div{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+main>:nth-child(5)>div>:nth-child(1){
+    position: relative;
+    top: 36px;
+    left: 48px;
+}
+main>:nth-child(5)>div>:nth-child(2){
+    position: relative;
+    top: 76px;
+    left: 40px;
+}
+main>:nth-child(5)>div>:nth-child(3){
+    position: relative;
+    top: 36px;
+    left: 4px;
+}
+main>:nth-child(5)>div>:nth-child(4){
+    position: relative;
+    top: -100px;
+    left: 65px;
+}
+main>:nth-child(5)>div>:nth-child(5){
+    position: relative;
+    top: 94px;
+    left: 5px;
+}
+main>:nth-child(5)>div>:nth-child(6){
+    position: relative;
+    top: -100px;
+    left: 30px;
+}
