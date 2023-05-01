@@ -187,6 +187,7 @@ main>:nth-child(2)>aside>img{
 }
 main>:nth-child(3){
     position: relative;
+    height: 55vw;
 }
 main>:nth-child(3)>h1{
     display: inline-block;
@@ -203,7 +204,7 @@ main>:nth-child(3)>:nth-child(2){
     display: inline-block;
     position: relative;
     top: 201px;
-    right: -440px;
+    right: -482px;
     background-color: #45AAF2;
     width: 550px;
     height: 118px;
@@ -291,4 +292,86 @@ main>:nth-child(3)>:nth-child(3)>img{
     position: absolute;
     top: 20px;
     left: 44px;
+}
+main>:nth-child(3)>:nth-child(4){
+    display: inline-block;
+    position: relative;
+    top: 361px;
+    left: 770px;
+    background-color: #45AAF2;
+    width: 550px;
+    height: 118px;
+    border-radius: 50px;
+}
+main>:nth-child(3)>:nth-child(4)>h2{
+    position: absolute;
+    display: inline-block;
+    top: 12px;
+    right: 45px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.8);
+}
+main>:nth-child(3)>:nth-child(4)>h3{
+    position: absolute;
+    display: inline-block;
+    top: 41px;
+    right: 158px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+main>:nth-child(3)>:nth-child(4)>img{
+    position: absolute;
+    top: 20px;
+    left: 44px;
+}
+main>:nth-child(3)>:nth-child(5){
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 430px;
+    background-color: #110F2F;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+main>:nth-child(3)>:nth-child(6){
+    position: absolute;
+    display: inline-block;
+    top: 237px;
+    right: 697px;
+    width: 30px;
+    height: 30px;
+    background-color: #341f97;
+    border-radius: 100%;
+}
+main>:nth-child(3)>:nth-child(7){
+    position: absolute;
+    display: inline-block;
+    top: 400px;
+    right: 697px;
+    width: 30px;
+    height: 30px;
+    background-color: #341f97;
+    border-radius: 100%;
+}
+main>:nth-child(3)>:nth-child(8){
+    position: absolute;
+    display: inline-block;
+    top: 550px;
+    right: 697px;
+    width: 30px;
+    height: 30px;
+    background-color: #341f97;
+    border-radius: 100%;
 }
