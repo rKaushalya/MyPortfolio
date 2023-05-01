@@ -180,6 +180,21 @@ main>:nth-child(2)>:nth-child(9){
     font-size: 24px;
     line-height: 35px;
 }
+main>:nth-child(2)>:nth-child(10)>a{
+    position: absolute;
+    text-decoration: none;
+    bottom: 73px;
+    left: 662px;
+    font-style: revert;
+    font-weight: 550;
+    font-size: 22px;
+    line-height: 24px;
+    color: black;
+}
+main>:nth-child(2)>:nth-child(10)>a:hover{
+    color: #ff253a;
+    text-decoration: underline;
+}
 main>:nth-child(2)>aside>img{
     position: absolute;
     top: 110px;
@@ -192,7 +207,7 @@ main>:nth-child(3){
 main>:nth-child(3)>h1{
     display: inline-block;
     position: relative;
-    left: 43%;
+    left: 41%;
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -517,4 +532,37 @@ main>:nth-child(5)>div>:nth-child(6){
     position: relative;
     top: -100px;
     left: 30px;
+}
+main>:nth-child(6){
+    background-color: #74B9FF;
+    position: relative;
+    height: 580px;
+}
+#Certificate{
+    display: inline-block;
+    position: relative;
+    left: 43%;
+    top: 15px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+}
+main>:nth-child(6)>section{
+    position: relative;
+    top: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main>:nth-child(6)>section>div>h4{
+    text-align: center;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
 }
