@@ -1,15 +1,9 @@
-body{
-    width: 100vw;
-}
-section{
-    border: 1px solid black;
-}
 header{
-    width: 100vw;
+    width: 98.9vw;
     position: fixed;
     top: 0;
     height: 60px;
-    z-index: 100;
+    z-index: 1;
     background-color: white;
     box-shadow: 1px 2px 3px -3px black;
 }
@@ -35,12 +29,10 @@ header>aside>img{
     margin-left: 115px;
 }
 main{
-    width: 100vw;
     position: relative;
     top: 55px;
 }
 main>:nth-child(1){
-    width: 100vw;
     height: 90vh;
 }
 main>:nth-child(1)>aside>img{
@@ -89,11 +81,14 @@ main>:nth-child(1)>nav>div{
     margin-right: 8px;
 }
 main>:nth-child(2){
-    width: 100vw;
+    height: 70vh;
     position: relative;
+    border: 1px solid black;
 }
 #AboutMe{
+    display: inline-block;
     position: relative;
+    left: 43%;
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -103,8 +98,9 @@ main>:nth-child(2){
 }
 main>:nth-child(2)>h2{
     position: relative;
-    left: 620px;
-    top: 34px;
+    display: inline-block;
+    left: 448px;
+    top: 80px;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -112,8 +108,9 @@ main>:nth-child(2)>h2{
 }
 main>:nth-child(2)>h3{
     position: relative;
-    left: 620px;
-    top: 14px;
+    display: inline-block;
+    left: 266px;
+    top: 120px;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -121,8 +118,9 @@ main>:nth-child(2)>h3{
 }
 main>:nth-child(2)>:nth-child(4){
     position: relative;
-    left: 653px;
-    top: 30px;
+    display: inline-block;
+    left: 90px;
+    top: 185px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -130,8 +128,9 @@ main>:nth-child(2)>:nth-child(4){
 }
 main>:nth-child(2)>:nth-child(5){
     position: relative;
-    left: 620px;
-    top: 13px;
+    display: inline-block;
+    left: 660px;
+    top: 134px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -139,8 +138,9 @@ main>:nth-child(2)>:nth-child(5){
 }
 main>:nth-child(2)>:nth-child(6){
     position: relative;
-    top: 35px;
-    left: 620px;
+    display: inline-block;
+    top: 200px;
+    left: 86px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
@@ -149,8 +149,9 @@ main>:nth-child(2)>:nth-child(6){
 }
 main>:nth-child(2)>:nth-child(7){
     position: relative;
-    top: -22px;
-    left: 897px;
+    display: inline-block;
+    top: 200px;
+    left: 289px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
@@ -159,8 +160,9 @@ main>:nth-child(2)>:nth-child(7){
 }
 main>:nth-child(2)>:nth-child(8){
     position: relative;
-    top: -22px;
-    left: 620px;
+    display: inline-block;
+    top: 255px;
+    left: -329px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
@@ -169,8 +171,9 @@ main>:nth-child(2)>:nth-child(8){
 }
 main>:nth-child(2)>:nth-child(9){
     position: relative;
-    top: -78px;
-    left: 897px;
+    display: inline-block;
+    top: 172px;
+    left: 946px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
