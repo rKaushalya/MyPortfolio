@@ -566,3 +566,77 @@ main>:nth-child(6)>section>div>h4{
     line-height: 24px;
     color: #000000;
 }
+main>:nth-child(7){
+    position: relative;
+    height: 150vh;
+}
+#Projects{
+    display: inline-block;
+    position: relative;
+    left: 43%;
+    top: 15px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+}
+main>:nth-child(7)>:nth-child(2)>:nth-child(2)>img{
+    position: absolute;
+    top: 160px;
+    right: 200px;
+}
+main>:nth-child(7)>:nth-child(2)>:nth-child(1)>h4{
+    position: relative;
+    top: 5px;
+    left: 90px;
+    display: inline-block;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+main>:nth-child(7)>:nth-child(2)>:nth-child(1)>p{
+    position: relative;
+    top: 160px;
+    left: -470px;
+    display: inline-block;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+main>:nth-child(7)>:nth-child(2)>:nth-child(4)>img{
+    position: relative;
+    top: 125px;
+    left: 742px;
+}
+main>:nth-child(7)>:nth-child(2)>:nth-child(3)>h4{
+    position: relative;
+    top: 234px;
+    left: 298px;
+    display: inline-block;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+main>:nth-child(7)>:nth-child(2)>:nth-child(3)>p{
+    position: relative;
+    top: 387px;
+    right: 15px;
+    display: inline-block;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
