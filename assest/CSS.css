@@ -19,6 +19,7 @@ header>nav>menu>li{
 header>nav>menu>li>a{
     text-decoration: none;
     color: black;
+    font-size: 18px;
 }
 header>nav>menu>li>a:hover{
     color: blue;
@@ -69,7 +70,7 @@ main>:nth-child(1)>nav>button{
 }
 main>:nth-child(1)>nav>button>a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-family: "Arial Black";
 }
 #sosial{
@@ -80,6 +81,11 @@ main>:nth-child(1)>nav>button>a{
 main>:nth-child(1)>nav>div{
     display: inline-block;
     margin-right: 8px;
+}
+#nav{
+    position: absolute;
+    top: 0;
+    font-size: 0;
 }
 main>:nth-child(2){
     height: 70vh;
