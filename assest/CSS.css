@@ -568,7 +568,7 @@ main>:nth-child(6)>section>div>h4{
 }
 main>:nth-child(7){
     position: relative;
-    height: 150vh;
+    height: 185vh;
 }
 #Projects{
     display: inline-block;
@@ -639,4 +639,69 @@ main>:nth-child(7)>:nth-child(2)>:nth-child(3)>p{
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+}
+#Assignment{
+    display: inline-block;
+    position: relative;
+    top: 135px;
+    left: 7%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+}
+main>:nth-child(7)>:nth-child(3)>:nth-child(2){
+    position: absolute;
+    bottom: 132px;
+    left: 350px;
+    width: 300px;
+    height: 350px;
+    background: rgba(116, 185, 255, 0.4);
+    border-radius: 30px;
+}
+main>:nth-child(7)>:nth-child(3)>:nth-child(3){
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 350px;
+    height: 400px;
+    background: rgba(116, 185, 255, 0.4);
+    border-radius: 30px;
+    z-index: 1;
+}
+main>:nth-child(7)>:nth-child(3)>:nth-child(4){
+    position: absolute;
+    bottom: 132px;
+    right: 350px;
+    width: 300px;
+    height: 350px;
+    background: rgba(116, 185, 255, 0.4);
+    border-radius: 30px;
+}
+main>:nth-child(7)>:nth-child(3)>section>aside>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+main>:nth-child(7)>:nth-child(3)>:nth-child(3)>h3{
+    position: absolute;
+    top: 247px;
+    left: 90px;
+}
+main>:nth-child(7)>:nth-child(3)>:nth-child(2)>h3{
+    position: absolute;
+    top: 215px;
+    left: 68px;
+}
+main>:nth-child(7)>:nth-child(3)>:nth-child(4)>h3{
+    position: absolute;
+    top: 215px;
+    left: 68px;
 }
