@@ -779,8 +779,8 @@ footer>:nth-child(2)>aside>img{
 }
 footer>:nth-child(2)>button{
     position: absolute;
-    bottom: 33px;
-    right: 120px;
+    bottom: 24px;
+    right: 100px;
     width: 105px;
     height: 38px;
     background-color: blue;
@@ -788,7 +788,7 @@ footer>:nth-child(2)>button{
 }
 footer>:nth-child(2)>button>p{
     position: absolute;
-    top: 1px;
+    top: 3px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -799,4 +799,105 @@ footer>:nth-child(2)>button>p{
     font-size: 22px;
     line-height: 29px;
     color: #FFFFFF;
+}
+footer>:nth-child(3){
+    position: relative;
+    top: 24px;
+    height: 400px;
+}
+footer>:nth-child(3)>h3{
+    position: relative;
+    display: inline-block;
+    top: 85px;
+    left: 154px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+footer>:nth-child(3)>article>p{
+    position: relative;
+    display: inline-block;
+    top: 68px;
+    left: 154px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+footer>:nth-child(3)>:nth-child(4){
+    position: absolute;
+    bottom: 190px;
+    right: 275px;
+}
+footer>:nth-child(3)>:nth-child(4)>li>a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+footer>:nth-child(3)>:nth-child(3){
+    position: absolute;
+    display: inline-block;
+    top: 87px;
+    right: 274px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+footer>:nth-child(3)>address>li>i{
+    margin-right: 12px;
+}
+footer>:nth-child(3)>:nth-child(5){
+    position: absolute;
+    bottom: 142px;
+    right: 160px;
+}
+footer>:nth-child(3)>:nth-child(5)>li>a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+footer>:nth-child(3)>:nth-child(6){
+    position: absolute;
+    bottom: 65px;
+    right: 227px;
+    display: inline-block;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+footer>:nth-child(3)>:nth-child(6)>i{
+    margin-right: 12px;
+}
+footer>:nth-child(3)>:nth-child(7){
+    position: absolute;
+    bottom: 20px;
+    left: 518px;
+    font-family: 'SeoulHangang CB';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+
 }
