@@ -176,9 +176,9 @@ main>:nth-child(2)>:nth-child(8){
     line-height: 35px;
 }
 main>:nth-child(2)>:nth-child(9){
-    position: relative;
+    position: absolute;
     display: inline-block;
-    top: 172px;
+    top: 416px;
     left: 946px;
     font-family: 'Jost';
     font-style: normal;
