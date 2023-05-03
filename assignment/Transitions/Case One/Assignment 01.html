@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Assignment 01</title>
+  <link rel="stylesheet" href="../../../assest/normalize.css">
+  <link rel="stylesheet" href="../../../assest/frontawesome/css/all.css">
+
+  <style>
+    section>div{
+      position: relative;
+      height: 60px;
+      width: 50px;
+      background-color: blueviolet;
+    }
+    section>div>img{
+      position: absolute;
+      right: 10px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    section>div>p{
+      position: absolute;
+      right: 80px;
+      transition: 3s;
+      color: white;
+      font-size: 20px;
+    }
+    section>:nth-child(1){
+      top: 50px;
+      transition: 3s;
+    }
+    section>:nth-child(2){
+      top: 80px;
+      transition: 3s;
+    }
+    section>:nth-child(3){
+      top: 110px;
+      transition: 3s;
+    }
+    section>:nth-child(4){
+      top: 140px;
+      transition: 3s;
+    }
+    section>:nth-child(5){
+      top: 170px;
+      transition: 3s;
+    }
+    section>:nth-child(1):hover{
+      top: 50px;
+      width: 200px;
+      transition: 3s;
+    }
+    section>:nth-child(2):hover{
+      top: 80px;
+      width: 200px;
+      transition: 3s;
+    }
+    section>:nth-child(3):hover{
+      top: 110px;
+      width: 200px;
+      transition: 3s;
+    }
+    section>:nth-child(4):hover{
+      top: 140px;
+      width: 200px;
+      transition: 3s;
+    }
+    section>:nth-child(5):hover{
+      top: 180px;
+      width: 200px;
+      transition: 3s;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div><img src="../../../assest/assignment/icons8-building-100.png" height="35"><p>Hover</p></div>
+  <div><img src="../../../assest/assignment/icons8-building-100.png" height="35"><p>Hover</p></div>
+  <div><img src="../../../assest/assignment/icons8-building-100.png" height="35"><p>Hover</p></div>
+  <div><img src="../../../assest/assignment/icons8-building-100.png" height="35"><p>Hover</p></div>
+  <div><img src="../../../assest/assignment/icons8-building-100.png" height="35"><p>Hover</p></div>
+</section>
+</body>
+</html>
