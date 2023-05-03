@@ -88,7 +88,7 @@ main>:nth-child(1)>nav>div{
     font-size: 0;
 }
 main>:nth-child(2){
-    height: 70vh;
+    height: 600px;
     position: relative;
 }
 #AboutMe{
