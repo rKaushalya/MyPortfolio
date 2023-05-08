@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 02</title>
+  <link rel="stylesheet" href="../../../assest/normalize.css">
+  <link rel="stylesheet" href="../../../assest/frontawesome/css/all.css">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: blue;
+        }
+        div{
+            height: 400px;
+            width: 400px;
+            position: relative;
+            top: 220px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: white;
+        }
+        div::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            border: 15px solid white;
+            position: absolute;
+            border-radius: 100%;
+            border-top-color: red;
+            background-color: grey;
+        }
+        div:hover::before{
+            transform: rotate(360deg);
+            transition: 3s;
+        }
+        h1{
+            position: relative;
+            top: 195px;
+            left: 168px;
+        }
+    </style>
+
+</head>
+<body>
+<div><h1>RWAD</h1></div>
+</body>
+</html>

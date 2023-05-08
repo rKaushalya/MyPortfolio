@@ -367,30 +367,30 @@ main>:nth-child(3)>:nth-child(5){
     margin: auto;
 }
 main>:nth-child(3)>:nth-child(6){
-    position: absolute;
+    position: relative;
     display: inline-block;
-    top: 237px;
-    right: 697px;
+    top: 0;
+    left: 151px;
     width: 30px;
     height: 30px;
     background-color: #341f97;
     border-radius: 100%;
 }
 main>:nth-child(3)>:nth-child(7){
-    position: absolute;
+    position: relative;
     display: inline-block;
-    top: 400px;
-    right: 697px;
+    top: 150px;
+    left: 117px;
     width: 30px;
     height: 30px;
     background-color: #341f97;
     border-radius: 100%;
 }
 main>:nth-child(3)>:nth-child(8){
-    position: absolute;
+    position: relative;
     display: inline-block;
-    top: 550px;
-    right: 697px;
+    top: 316px;
+    left: 84px;
     width: 30px;
     height: 30px;
     background-color: #341f97;
@@ -517,7 +517,7 @@ main>:nth-child(5)>div>:nth-child(1){
 main>:nth-child(5)>div>:nth-child(2){
     position: relative;
     top: 76px;
-    left: 40px;
+    left: 35px;
 }
 main>:nth-child(5)>div>:nth-child(3){
     position: relative;
