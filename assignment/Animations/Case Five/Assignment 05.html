@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 05</title>
+  <link rel="stylesheet" href="../../../assest/normalize.css">
+
+  <style>
+    .slider-frame{
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+    }
+    .slider-images{
+        width: 400vw;
+        height: 100vh;
+        margin: 0 0 0 -300vw;
+        position: relative;
+        -webkit-animation-name: slider-animation;
+        -webkit-animation-duration: 20s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+    @-webkit-keyframes slider-animation {
+        0%{left: 0}
+        8%{left: 0}
+        16%{left: 100vw}
+        24%{left: 100vw}
+        32%{left: 200vw}
+        40%{left: 200vw}
+        48%{left: 300vw}
+        56%{left: 300vw}
+        64%{left: 200vw}
+        72%{left: 200vw}
+        80%{left: 100vw}
+        88%{left: 100vw}
+        95%{left: 0}
+        100%{left: 0}
+    }
+    .img-container>img{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        float: left;
+    }
+  </style>
+</head>
+<body>
+<div class="slider-frame">
+    <div class="slider-images">
+        <div class="img-container">
+            <img src="../../../assest/assignment/animation/slide%2001.jpg">
+        </div>
+        <div class="img-container">
+            <img src="../../../assest/assignment/animation/slide%2002.jpg">
+        </div>
+        <div class="img-container">
+            <img src="../../../assest/assignment/animation/slider%2003.jpg">
+        </div>
+        <div class="img-container">
+            <img src="../../../assest/assignment/animation/slide%2004.jpg">
+        </div>
+    </div>
+</div>
+</body>
+</html>
