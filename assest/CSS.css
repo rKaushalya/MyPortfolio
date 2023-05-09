@@ -205,6 +205,7 @@ main>:nth-child(2)>aside>img{
     position: absolute;
     top: 110px;
     left: 201px;
+    border-radius: 12px;
 }
 main>:nth-child(3){
     position: relative;
@@ -370,7 +371,7 @@ main>:nth-child(3)>:nth-child(6){
     position: relative;
     display: inline-block;
     top: 0;
-    left: 151px;
+    left: 143px;
     width: 30px;
     height: 30px;
     background-color: #341f97;
@@ -380,7 +381,7 @@ main>:nth-child(3)>:nth-child(7){
     position: relative;
     display: inline-block;
     top: 150px;
-    left: 117px;
+    left: 109px;
     width: 30px;
     height: 30px;
     background-color: #341f97;
@@ -390,7 +391,7 @@ main>:nth-child(3)>:nth-child(8){
     position: relative;
     display: inline-block;
     top: 316px;
-    left: 84px;
+    left: 75px;
     width: 30px;
     height: 30px;
     background-color: #341f97;
@@ -517,7 +518,7 @@ main>:nth-child(5)>div>:nth-child(1){
 main>:nth-child(5)>div>:nth-child(2){
     position: relative;
     top: 76px;
-    left: 35px;
+    left: 38px;
 }
 main>:nth-child(5)>div>:nth-child(3){
     position: relative;
@@ -905,5 +906,193 @@ footer>:nth-child(3)>:nth-child(7){
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+}
+
+/*@media all and (min-width: 1440px) and (max-width: 2560px){
+    main>:nth-child(3)>:nth-child(8) {
+        left: 83px;
+    }
+    main>:nth-child(3)>:nth-child(7) {
+        left: 117px;
+    }
+    main>:nth-child(3)>:nth-child(6) {
+        left: 151px;
+    }
+}*/
+@media all and (min-width: 768px) and (max-width: 1024px){
+    main>:nth-child(1)>article>:nth-child(2) {
+        left: 130px;
+        top: 222px;
+        font-size: 36px;
+    }
+    main>:nth-child(1)>article>:nth-child(1) {
+        left: 131px;
+        font-size: 36px;
+    }
+    main>:nth-child(1)>article>:nth-child(3) {
+        left: 132px;
+        top: 290px;
+    }
+    main>:nth-child(1)>nav>button {
+        left: 132px;
+        top: 373px;
+        height: 34px;
+        width: 108px;
+    }
+    main>:nth-child(1)>nav>button>a {
+        font-size: 13px;
+    }
+    #sosial {
+        left: 134px;
+        top: 458px;
+    }
+    main>:nth-child(1)>aside>img {
+        right: 116px;
+        top: 198px;
+        height: 305px;
+    }
+    main>:nth-child(2)>aside>img {
+        top: 130px;
+        left: 110px;
+        height: 360px;
+    }
+    main>:nth-child(2)>h2 {
+        left: 281px;
+        top: 100px;
+        font-size: 32px;
+    }
+    main>:nth-child(2)>h3 {
+        left: 120px;
+        top: 140px;
+    }
+    main>:nth-child(2)>:nth-child(4) {
+        left: 528px;
+        top: 55px;
+        font-size: 15px;
+    }
+    main>:nth-child(2)>:nth-child(5) {
+        left: 42px;
+        top: 151px;
+        font-size: 15px;
+    }
+    main>:nth-child(2)>:nth-child(6) {
+        top: 210px;
+        left: -436px;
+        font-size: 22px;
+    }
+    main>:nth-child(2)>:nth-child(7) {
+        top: 128px;
+        left: 675px;
+        font-size: 22px;
+    }
+    main>:nth-child(2)>:nth-child(8) {
+        top: 182px;
+        left: 192px;
+        font-size: 22px;
+    }
+    main>:nth-child(2)>:nth-child(9) {
+        top: 416px;
+        left: 751px;
+        font-size: 22px;
+    }
+    main>:nth-child(2)>:nth-child(10)>a {
+        bottom: 77px;
+        left: 497px;
+        font-size: 22px;
+    }
+    main>:nth-child(3)>h1 {
+        left: 39%;
+        font-size: 38px;
+        top: -30px;
+    }
+    main>:nth-child(3)>:nth-child(2) {
+        top: 122px;
+        right: -270px;
+        width: 444px;
+        height: 88px;
+    }
+    main>:nth-child(3)>:nth-child(2)>img {
+        top: 20px;
+        left: 31px;
+        height: 50px;
+    }
+    main>:nth-child(3)>:nth-child(2)>article>h2 {
+        top: -4px;
+        right: 77px;
+        font-size: 18px;
+    }
+    main>:nth-child(3)>:nth-child(2)>article>h3 {
+        top: 18px;
+        right: 73px;
+        font-size: 16px;
+    }
+    main>:nth-child(3)>:nth-child(2)>article>h4 {
+        top: 35px;
+        right: 106px;
+        font-size: 16px;
+    }
+    main>:nth-child(3)>:nth-child(6) {
+        top: -33px;
+        left: -394px;
+        width: 20px;
+        height: 20px;
+    }
+    main>:nth-child(3)>:nth-child(5) {
+        width: 7px;
+    }
+    main>:nth-child(3)>:nth-child(3) {
+        top: 122px;
+        left: 29px;
+        width: 444px;
+        height: 88px;
+    }
+    main>:nth-child(3)>:nth-child(3)>img {
+        top: 18px;
+        left: 30px;
+        height: 56px;
+    }
+    main>:nth-child(3)>:nth-child(3)>h2 {
+        top: 4px;
+        right: 24px;
+        font-size: 18px;
+    }
+    main>:nth-child(3)>:nth-child(3)>h3 {
+        top: 28px;
+        right: 151px;
+        font-size: 16px;
+    }
+    main>:nth-child(3)>:nth-child(4) {
+        top: 259px;
+        left: 98px;
+        width: 444px;
+        height: 88px;
+    }
+    main>:nth-child(3)>:nth-child(4)>img {
+        top: 19px;
+        left: 31px;
+        height: 56px;
+    }
+    main>:nth-child(3)>:nth-child(4)>h2 {
+        top: 4px;
+        right: 21px;
+        font-size: 18px;
+    }
+    main>:nth-child(3)>:nth-child(4)>h3 {
+        top: 29px;
+        right: 154px;
+        font-size: 16px;
+    }
+    main>:nth-child(3)>:nth-child(7) {
+        top: 89px;
+        left: -418px;
+        width: 20px;
+        height: 20px;
+    }
+    main>:nth-child(3)>:nth-child(8) {
+        top: 226px;
+        left: -442px;
+        width: 20px;
+        height: 20px;
+    }
 
 }
