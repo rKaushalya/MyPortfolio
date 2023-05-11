@@ -1398,5 +1398,61 @@ footer>:nth-child(3)>:nth-child(7){
     main>:nth-child(1) {
         height: 70vh;
     }
-
+    #AboutMe {
+        left: 41%;
+        font-size: 30px;
+    }
+    main>:nth-child(2)>aside>img {
+        top: 128px;
+        left: 48px;
+        height: 300px;
+    }
+    main>:nth-child(2)>h2 {
+        left: 160px;
+        top: 90px;
+        font-size: 26px;
+    }
+    main>:nth-child(2)>h3 {
+        left: 28px;
+        top: 120px;
+        font-size: 22px;
+    }
+    main>:nth-child(2)>:nth-child(4) {
+        left: 325px;
+        top: 99px;
+        font-size: 14px;
+    }
+    main>:nth-child(2)>:nth-child(5) {
+        left: 300px;
+        top: 70px;
+        font-size: 14px;
+    }
+    main>:nth-child(2)>:nth-child(6) {
+        top: 113px;
+        left: -147px;
+        font-size: 20px;
+    }
+    main>:nth-child(2)>:nth-child(7) {
+        top: 39px;
+        left: 456px;
+        font-size: 20px;
+    }
+    main>:nth-child(2)>:nth-child(8) {
+        top: 80px;
+        left: 22px;
+        font-size: 20px;
+    }
+    main>:nth-child(2)>:nth-child(9) {
+        top: 355px;
+        left: 527px;
+        font-size: 20px;
+    }
+    main>:nth-child(2)>:nth-child(10)>a {
+        bottom: 58px;
+        left: 299px;
+        font-size: 20px;
+    }
+    main>:nth-child(2) {
+        height: 500px;
+    }
 }
