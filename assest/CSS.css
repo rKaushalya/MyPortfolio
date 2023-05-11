@@ -1455,4 +1455,100 @@ footer>:nth-child(3)>:nth-child(7){
     main>:nth-child(2) {
         height: 500px;
     }
+    main>:nth-child(3)>h1 {
+        left: 36%;
+        font-size: 30px;
+    }
+    main>:nth-child(3)>:nth-child(5) {
+        display: none;
+    }
+    main>:nth-child(3)>:nth-child(6) {
+        display: none;
+    }
+    main>:nth-child(3)>:nth-child(7) {
+        display: none;
+    }
+    main>:nth-child(3)>:nth-child(8) {
+        display: none;
+    }
+    main>:nth-child(3)>:nth-child(2) {
+        top: 16px;
+        right: -100px;
+        width: 570px;
+        border-radius: 0;
+        background-color: white;
+    }
+    main>:nth-child(3)>:nth-child(2)>img {
+        top: 2px;
+        left: 39px;
+        height: 111px;
+    }
+    main>:nth-child(3)>:nth-child(2)>article>h2 {
+        top: 4px;
+        right: 101px;
+        font-size: 18px;
+        color: black;
+    }
+    main>:nth-child(3)>:nth-child(2)>article>h3 {
+        top: 30px;
+        right: 99px;
+        font-size: 16px;
+        color: black;
+    }
+    main>:nth-child(3)>:nth-child(2)>article>h4 {
+        top: 50px;
+        right: 132px;
+        font-size: 16px;
+        color: black;
+    }
+    main>:nth-child(3)>:nth-child(3) {
+        top: 40px;
+        left: 99px;
+        background-color: white;
+        width: 570px;
+        border-radius: 0;
+    }
+    main>:nth-child(3)>:nth-child(3)>img {
+        top: 22px;
+        left: 53px;
+    }
+    main>:nth-child(3)>:nth-child(3)>h2 {
+        top: 12px;
+        right: 60px;
+        font-size: 18px;
+        color: black;
+    }
+    main>:nth-child(3)>:nth-child(3)>h3 {
+        top: 42px;
+        right: 145px;
+        font-size: 16px;
+        color: black;
+    }
+    main>:nth-child(3)>:nth-child(4) {
+        top: 66px;
+        left: 99px;
+        width: 570px;
+        border-radius: 0;
+        background-color: white;
+    }
+    main>:nth-child(3) {
+        height: 77vw;
+    }
+    main>:nth-child(3)>:nth-child(4)>img {
+        top: 22px;
+        left: 53px;
+    }
+    main>:nth-child(3)>:nth-child(4)>h2 {
+        top: 13px;
+        right: 55px;
+        font-size: 18px;
+        color: black;
+    }
+    main>:nth-child(3)>:nth-child(4)>h3 {
+        top: 44px;
+        right: 144px;
+        font-size: 16px;
+        color: black;
+    }
+
 }
