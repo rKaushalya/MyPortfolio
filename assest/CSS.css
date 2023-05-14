@@ -1636,4 +1636,81 @@ main>:nth-child(7)>:nth-child(3){
         left: 9px;
         height: 305px;
     }
+    #Certificate {
+        left: 40%;
+        font-size: 36px;
+    }
+    main>:nth-child(6)>section>div>img {
+       height: 155px;
+    }
+    main>:nth-child(6)>section>div>h4 {
+        font-size: 16px;
+    }
+    main>:nth-child(6) {
+        height: 420px;
+    }
+    #Projects {
+        display: inline-block;
+        left: 42%;
+        top: 0;
+        font-size: 36px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(2)>img {
+        top: 140px;
+        right: 46px;
+        height: 200px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(1)>h4 {
+        top: -28px;
+        left: 39px;
+        font-size: 20px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(1)>p {
+        top: -20px;
+        left: 33px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(4)>img {
+        top: -90px;
+        left: 398px;
+        height: 200px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(3)>h4 {
+        top: -12px;
+        left: 110px;
+        font-size: 20px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(3)>p {
+        top: 110px;
+        right: 112px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #Assignment {
+        top: -45px;
+        left: 10%;
+        font-size: 36px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(4) {
+        top: 132px;
+        right: 105px;
+        width: 230px;
+        height: 270px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(3) {
+        top: -50px;
+        width: 260px;
+        height: 300px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(2) {
+        top: 132px;
+        left: 105px;
+        width: 230px;
+        height: 270px;
+    }
+    main>:nth-child(7) {
+        height: 170vh;
+    }
+
 }
