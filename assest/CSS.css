@@ -1327,9 +1327,9 @@ main>:nth-child(7)>:nth-child(3){
     }
 }
 @media all and (min-width: 425px) and (max-width: 768px){
-    main{
+    /*main{
         overflow: hidden;
-    }
+    }*/
     #Message {
         left: 0;
     }
@@ -1578,5 +1578,62 @@ main>:nth-child(7)>:nth-child(3){
     main>:nth-child(4)>:nth-child(2)>section>p {
         font-size: 12px;
     }
-
+    #What\ i\ can\ do {
+        left: 8%;
+        font-size: 36px;
+        top: 30px;
+    }
+    main>:nth-child(4)>:nth-child(4)>section {
+        width: 215px;
+        height: 252px;
+        top: -12px;
+    }
+    main>:nth-child(4)>:nth-child(4)>section>img {
+        height: 35px;
+    }
+    main>:nth-child(4)>:nth-child(4)>section>article>h4 {
+        top: 12px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    main>:nth-child(4)>:nth-child(4)>section>article>p {
+        top: 2px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    #Gallery {
+        left: 44%;
+        top: 2px;
+        font-size: 36px;
+    }
+    main>:nth-child(5)>div>:nth-child(1) {
+        top: -30px;
+        left: 32px;
+        height: 210px;
+    }
+    main>:nth-child(5)>div>:nth-child(2) {
+        top: -12px;
+        left: 32px;
+        height: 300px;
+    }
+    main>:nth-child(5)>div>:nth-child(3) {
+        top: -30px;
+        left: -6px;
+        height: 210px;
+    }
+    main>:nth-child(5)>div>:nth-child(4) {
+        top: -105px;
+        left: 32px;
+        height: 305px;
+    }
+    main>:nth-child(5)>div>:nth-child(5) {
+        top: 2px;
+        left: 0;
+        height: 200px;
+    }
+    main>:nth-child(5)>div>:nth-child(6) {
+        top: -105px;
+        left: 9px;
+        height: 305px;
+    }
 }
