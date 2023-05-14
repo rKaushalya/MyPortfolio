@@ -1327,18 +1327,6 @@ main>:nth-child(7)>:nth-child(3){
     }
 }
 @media all and (min-width: 425px) and (max-width: 768px){
-    /*main{
-        overflow: hidden;
-    }*/
-    #Message {
-        left: 0;
-    }
-    #Name {
-        left: 0;
-    }
-    #Email {
-        left: 0;
-    }
     header>nav>menu>li>a {
         font-size: 14px;
     }
@@ -1712,5 +1700,91 @@ main>:nth-child(7)>:nth-child(3){
     main>:nth-child(7) {
         height: 170vh;
     }
-
+    #Get\ in\ touch {
+        left: 39%;
+        top: -5px;
+        font-size: 36px;
+    }
+    footer>:nth-child(2)>aside>img {
+        top: 63px;
+        left: 5px;
+        height: 150px;
+    }
+    footer>:nth-child(2) {
+        top: -11px;
+        left: 76px;
+        width: 80vw;
+        height: 265px;
+    }
+    #Name {
+        top: -105px;
+        left: 294px;
+        height: 30px;
+        width: 272px;
+    }
+    #Email {
+        top: -110px;
+        left: 294px;
+        height: 30px;
+        width: 272px;
+    }
+    #Message {
+        top: -115px;
+        left: 294px;
+        height: 50px;
+        width: 272px;
+    }
+    footer>:nth-child(2)>button {
+        bottom: 15px;
+        right: 54px;
+        width: 79px;
+        height: 30px;
+    }
+    footer>:nth-child(2)>button>p {
+        top: -1px;
+        font-size: 16px;
+    }
+    footer>:nth-child(3) {
+        height: 345px;
+    }
+    footer>:nth-child(3)>h3 {
+        top: 37px;
+        left: 50px;
+        font-size: 22px;
+    }
+    footer>:nth-child(3)>:nth-child(3) {
+        top: 38px;
+        right: 140px;
+        font-size: 22px;
+    }
+    footer>:nth-child(3)>article>p {
+        top: 41px;
+        left: 50px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    footer>:nth-child(3)>:nth-child(4)>li>a {
+        font-size: 18px;
+    }
+    footer>:nth-child(3)>:nth-child(4) {
+        bottom: 178px;
+        right: 140px;
+    }
+    footer>:nth-child(3)>:nth-child(5)>li>a {
+        font-size: 18px;
+    }
+    footer>:nth-child(3)>:nth-child(5) {
+        bottom: 142px;
+        right: 54px;
+    }
+    footer>:nth-child(3)>:nth-child(6) {
+        bottom: 78px;
+        right: 108px;
+        font-size: 18px;
+    }
+    footer>:nth-child(3)>:nth-child(7) {
+        bottom: 20px;
+        left: 265px;
+        font-size: 14px;
+    }
 }
