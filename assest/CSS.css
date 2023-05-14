@@ -206,6 +206,7 @@ main>:nth-child(2)>aside>img{
     top: 110px;
     left: 201px;
     border-radius: 12px;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);
 }
 main>:nth-child(3){
     position: relative;
@@ -866,6 +867,9 @@ footer>:nth-child(3)>:nth-child(3){
 footer>:nth-child(3)>address>li>i{
     margin-right: 12px;
 }
+footer>:nth-child(3)>address>li{
+    list-style-type: none;
+}
 footer>:nth-child(3)>:nth-child(5){
     position: absolute;
     bottom: 142px;
@@ -910,6 +914,9 @@ footer>:nth-child(3)>:nth-child(7){
 main>:nth-child(7)>:nth-child(3){
     position: relative;
     height: 96vh;
+}
+main>:nth-child(1)>nav>button>a:hover {
+    margin-right: 5px;
 }
 /*@media all and (min-width: 1440px) and (max-width: 2560px){
     main>:nth-child(3)>:nth-child(8) {
@@ -1326,7 +1333,7 @@ main>:nth-child(7)>:nth-child(3){
         margin-left: 75px;
     }
 }
-@media all and (min-width: 425px) and (max-width: 768px){
+@media all and (min-width: 427px) and (max-width: 768px){
     header>nav>menu>li>a {
         font-size: 14px;
     }
@@ -1787,4 +1794,73 @@ main>:nth-child(7)>:nth-child(3){
         left: 265px;
         font-size: 14px;
     }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(3)>h3 {
+        top: 192px;
+        left: 76px;
+        font-size: 18px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(2)>h3 {
+        top: 164px;
+        left: 65px;
+        font-size: 18px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(4)>h3 {
+        top: 158px;
+        left: 71px;
+        font-size: 18px;
+    }
+}
+@media all and (min-width: 376px) and (max-width: 426px){
+    body{
+        overflow: hidden;
+    }
+    main>:nth-child(1)>aside>img {
+        top: 260px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 260px;
+    }
+    header>nav>menu {
+        display: none;
+    }
+    header>aside>img {
+        margin-top: 17px;
+        margin-left: 40px;
+        height: 25px;
+    }
+    main>:nth-child(1)>article>:nth-child(1) {
+        left: 20px;
+        top: 23px;
+        font-size: 34px;
+    }
+    main>:nth-child(1)>article>:nth-child(2) {
+        left: 20px;
+        top: 75px;
+        font-size: 34px;
+    }
+    main>:nth-child(1)>article>:nth-child(3) {
+        left: 20px;
+        top: 135px;
+        font-size: 22px;
+    }
+    main>:nth-child(1)>nav>button {
+        left: 20px;
+        top: 210px;
+        border-radius: 30px;
+        height: 30px;
+        width: 102px;
+    }
+    main>:nth-child(1)>nav>button>a {
+        font-size: 10px;
+    }
+    #sosial {
+        left: 77px;
+        top: 552px;
+    }
+    #sosial>div>img {
+        height: 35px;
+        width: 35px;
+    }
+
 }
