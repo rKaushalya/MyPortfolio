@@ -2491,3 +2491,308 @@ main>:nth-child(1)>nav>button>a:hover {
         right: 214px;
     }
 }
+@media all and (max-width: 320px){
+    main>:nth-child(1)>article>:nth-child(1) {
+        top: 20px;
+        font-size: 28px;
+    }
+    main>:nth-child(1)>article>:nth-child(2) {
+        top: 68px;
+        font-size: 28px;
+    }
+    main>:nth-child(1)>article>:nth-child(3) {
+        top: 124px;
+        font-size: 19px;
+    }
+    main>:nth-child(1)>nav>button {
+        top: 190px;
+    }
+    #sosial {
+        left: 26px;
+    }
+    #AboutMe {
+        left: 26%;
+        font-size: 28px;
+    }
+    main>:nth-child(2)>aside>img {
+        left: 37px;
+        height: 320px;
+    }
+    main>:nth-child(2)>h2 {
+        top: 438px;
+        font-size: 28px;
+    }
+    main>:nth-child(2)>h3 {
+        left: 20px;
+        top: 390px;
+    }
+    main>:nth-child(2)>:nth-child(4) {
+        left: 10px;
+        top: 370px;
+        font-size: 10px;
+    }
+    main>:nth-child(2)>:nth-child(5) {
+        left: 2px;
+        top: 347px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    main>:nth-child(2)>:nth-child(6) {
+        top: 342px;
+        left: 48px;
+    }
+    main>:nth-child(2)>:nth-child(8) {
+        top: 308px;
+        left: 48px;
+    }
+    main>:nth-child(2)>:nth-child(7) {
+        top: 413px;
+        left: -16px;
+    }
+    main>:nth-child(2)>:nth-child(9) {
+        top: 728px;
+        left: 48px;
+    }
+    main>:nth-child(2)>:nth-child(10)>a {
+        bottom: 54px;
+        left: 48px;
+    }
+    main>:nth-child(3)>h1 {
+        left: 19%;
+        font-size: 28px;
+    }
+    main>:nth-child(3)>:nth-child(2) {
+        width: 300px;
+    }
+    main>:nth-child(3)>:nth-child(2)>article>h2 {
+        right: 26px;
+        font-size: 12px;
+    }
+    main>:nth-child(3)>:nth-child(2)>article>h3 {
+        right: 7px;
+        font-size: 12px;
+    }
+    main>:nth-child(3)>:nth-child(2)>article>h4 {
+        right: 32px;
+        font-size: 12px;
+    }
+    main>:nth-child(3)>:nth-child(2)>img {
+        left: 21px;
+        height: 64px;
+    }
+    main>:nth-child(3)>:nth-child(3) {
+        width: 300px;
+    }
+    main>:nth-child(3)>:nth-child(3)>h2 {
+        right: 9px;
+        font-size: 12px;
+    }
+    main>:nth-child(3)>:nth-child(3)>h3 {
+        right: 52px;
+        font-size: 12px;
+    }
+    main>:nth-child(3)>:nth-child(3)>img {
+        left: 17px;
+        height: 50px;
+    }
+    main>:nth-child(3)>:nth-child(4) {
+       width: 300px;
+    }
+    main>:nth-child(3)>:nth-child(4)>h2 {
+        right: 5px;
+        font-size: 12px;
+    }
+    main>:nth-child(3)>:nth-child(4)>h3 {
+        right: 49px;
+        font-size: 12px;
+    }
+    main>:nth-child(3)>:nth-child(4)>img {
+        left: 17px;
+        height: 50px;
+    }
+    main>:nth-child(3) {
+        height: 120vw;
+    }
+    #Skills {
+        left: 38%;
+        font-size: 28px;
+    }
+    main>:nth-child(4)>:nth-child(2) {
+        left: 24px;
+    }
+    main>:nth-child(4)>:nth-child(2)>section {
+        width: 95px;
+    }
+    main>:nth-child(4)>:nth-child(2)>section>img {
+        left: 25px;
+    }
+    #What\ i\ can\ do {
+        font-size: 28px;
+    }
+    main>:nth-child(5)>div>:nth-child(1) {
+        left: 6px;
+        height: 151px;
+    }
+    main>:nth-child(5)>div>:nth-child(2) {
+        left: 0;
+        height: 180px;
+    }
+    main>:nth-child(5)>div>:nth-child(3) {
+        top: -80px;
+        left: 6px;
+        height: 151px;
+    }
+    main>:nth-child(5)>div>:nth-child(4) {
+        top: -50px;
+        left: -4px;
+        height: 237px;
+    }
+    main>:nth-child(5)>div>:nth-child(6) {
+        top: -160px;
+        left: -163px;
+        height: 233px;
+    }
+    main>:nth-child(5)>div>:nth-child(5) {
+        top: -35px;
+        left: 147px;
+        height: 114px;
+    }
+    main>:nth-child(6)>section>div>img {
+        height: 190px;
+    }
+    #Certificate {
+        left: 24%;
+        top: 10px;
+        font-size: 28px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(2)>img {
+        right: 24px;
+        height: 175px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(1)>h4 {
+        font-size: 12px;
+    }
+    #Projects {
+        left: 35%;
+        font-size: 28px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(1)>p {
+        left: 25px;
+        top: 114px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(3)>h4 {
+        top: 110px;
+        left: 109px;
+        font-size: 12px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(4)>img {
+        top: -3px;
+        left: 15px;
+        height: 175px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(3)>p {
+        top: 280px;
+        right: -20px;
+        font-size: 12px;
+    }
+    #Assignment {
+        top: 91px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(3) {
+        width: 120px;
+        height: 145px;
+        top: -20px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(2) {
+        top: 232px;
+        left: 180px;
+        width: 105px;
+        height: 130px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(4) {
+        top: 232px;
+        right: 180px;
+        width: 105px;
+        height: 130px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(3)>h3 {
+        top: 90px;
+        left: 26px;
+        font-size: 12px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(2)>h3 {
+        top: 78px;
+        left: 29px;
+        font-size: 10px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(4)>h3 {
+        top: 78px;
+        left: 29px;
+        font-size: 10px;
+    }
+    footer {
+        top: -260px;
+    }
+    #Get\ in\ touch {
+        left: 29%;
+        font-size: 28px;
+    }
+    footer>:nth-child(2) {
+        left: 12px;
+        height: 320px;
+    }
+    #Name {
+        width: 255px;
+        height: 35px;
+    }
+    #Email{
+        top: 30px;
+        width: 255px;
+        height: 35px;
+    }
+    #Message{
+        width: 255px;
+        height: 85px;
+        top: 32px;
+    }
+    footer>:nth-child(3)>h3 {
+        font-size: 20px;
+    }
+    footer>:nth-child(3)>article>p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    footer>:nth-child(3)>:nth-child(3) {
+        top: 164px;
+        right: 0;
+        font-size: 20px;
+    }
+    footer>:nth-child(3)>:nth-child(4) {
+        right: 0;
+        top: 242px;
+    }
+    footer>:nth-child(3)>:nth-child(4)>li>a {
+        font-size: 15px;
+    }
+    footer>:nth-child(3)>:nth-child(5)>li>a {
+        font-size: 15px;
+    }
+    footer>:nth-child(3)>:nth-child(5) {
+        right: 0;
+        top: 275px;
+    }
+    footer>:nth-child(3)>:nth-child(6) {
+        right: 0;
+        top: 286px;
+        font-size: 15px;
+    }
+    footer>:nth-child(3)>:nth-child(7) {
+        left: 80px;
+        font-size: 10px;
+    }
+    footer>:nth-child(3) {
+        height: 385px;
+    }
+}
