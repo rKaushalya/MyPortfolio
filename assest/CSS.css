@@ -1811,8 +1811,8 @@ main>:nth-child(1)>nav>button>a:hover {
     }
 }
 @media all and (min-width: 376px) and (max-width: 426px){
-    body{
-        overflow: hidden;
+    header {
+        height: 55px;
     }
     main>:nth-child(1)>aside>img {
         top: 260px;
@@ -1825,7 +1825,7 @@ main>:nth-child(1)>nav>button>a:hover {
         display: none;
     }
     header>aside>img {
-        margin-top: 17px;
+        margin-top: 16px;
         margin-left: 40px;
         height: 25px;
     }
@@ -1861,6 +1861,81 @@ main>:nth-child(1)>nav>button>a:hover {
     #sosial>div>img {
         height: 35px;
         width: 35px;
+    }
+    #AboutMe {
+        left: 29%;
+        font-size: 30px;
+    }
+    main>:nth-child(2)>aside>img {
+        left: 80px;
+        height: 350px;
+    }
+    main>:nth-child(2)>h2 {
+        left: -128px;
+        top: 470px;
+        font-size: 30px;
+    }
+    main>:nth-child(2)>h3 {
+        left: 32px;
+        top: 420px;
+        font-size: 18px;
+    }
+    main>:nth-child(2) {
+        height: 875px;
+    }
+    main>:nth-child(2)>:nth-child(4) {
+        left: 42px;
+        top: 406px;
+        font-size: 12px;
+    }
+    main>:nth-child(2)>:nth-child(5) {
+        left: 29px;
+        top: 378px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    main>:nth-child(2)>:nth-child(6) {
+        top: 360px;
+        left: 68px;
+        font-size: 18px;
+    }
+    main>:nth-child(2)>:nth-child(8) {
+        top: 323px;
+        left: 67px;
+        font-size: 18px;
+    }
+    main>:nth-child(2)>:nth-child(7) {
+        top: 427px;
+        left: 5px;
+        font-size: 18px;
+    }
+    main>:nth-child(2)>:nth-child(9) {
+        top: 762px;
+        left: 68px;
+        font-size: 18px;
+    }
+    main>:nth-child(2)>:nth-child(10)>a {
+        bottom: 31px;
+        left: 67px;
+        font-size: 18px;
+    }
+    main>:nth-child(3)>h1 {
+        left: 24%;
+        font-size: 30px;
+    }
+    main>:nth-child(3)>:nth-child(5) {
+        display: none;
+    }
+    main>:nth-child(3) {
+        height: 90vw;
+    }
+    main>:nth-child(3)>:nth-child(2) {
+        top: 6px;
+        right: -35px;
+        background-color: white;
+        width: 355px;
+        height: 80px;
+        border-radius: 0;
     }
 
 }
