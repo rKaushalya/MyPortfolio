@@ -1812,7 +1812,10 @@ main>:nth-child(1)>nav>button>a:hover {
 }
 @media all and (max-width: 426px){
     header {
-        height: 55px;
+        height: 50px;
+    }
+    main {
+        top: 50px;
     }
     main>:nth-child(1)>aside>img {
         top: 260px;
@@ -1825,9 +1828,9 @@ main>:nth-child(1)>nav>button>a:hover {
         display: none;
     }
     header>aside>img {
-        margin-top: 16px;
+        margin-top: 13px;
         margin-left: 40px;
-        height: 25px;
+        height: 23px;
     }
     main>:nth-child(1)>article>:nth-child(1) {
         left: 20px;
@@ -2034,19 +2037,24 @@ main>:nth-child(1)>nav>button>a:hover {
     }
     main>:nth-child(4)>:nth-child(2)>section {
         top: 22px;
-        left: 51px;
-        width: 80px;
-        height: 80px;
-        border-radius: 20px;
+        left: 21px;
+        width: 140px;
+        height: 90px;
+        border-radius: 10px
     }
     main>:nth-child(4)>:nth-child(2)>section>img {
         top: 12px;
-        left: 21px;
-        height: 40px;
-        width: 40px;
+        left: 47px;
+        height: 45px;
+        width: 45px;
     }
     main>:nth-child(4)>:nth-child(2)>section>p {
-        font-size: 12px;
+        font-size: 13px;
+        top: 64px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
     }
     #What\ i\ can\ do {
         top: 7px;
@@ -2132,5 +2140,178 @@ main>:nth-child(1)>nav>button>a:hover {
         font-size: 18px;
         line-height: 22px;
     }
-
+    #Projects {
+        left: 37%;
+        top: -50px;
+        font-size: 30px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(1)>h4 {
+        top: -65px;
+        left: 24px;
+        font-size: 15px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(2)>img {
+        top: 84px;
+        right: 48px;
+        height: 212px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(1)>p {
+        top: 137px;
+        left: 45px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(3)>h4 {
+        top: 88px;
+        left: 151px;
+        font-size: 15px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(4)>img {
+        top: 88px;
+        left: 35px;
+        height: 212px;
+    }
+    main>:nth-child(7)>:nth-child(2)>:nth-child(3)>p {
+        top: 415px;
+        right: 78px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #Assignment {
+        font-size: 30px;
+    }
+    main>:nth-child(7)>:nth-child(3) {
+        height: 100vh;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(3) {
+        width: 162px;
+        height: 200px;
+        top: 218px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(2) {
+        top: 329px;
+        left: 237px;
+        width: 140px;
+        height: 173px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(4) {
+        top: 329px;
+        right: 237px;
+        width: 140px;
+        height: 173px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(3)>h3 {
+        top: 124px;
+        left: 40px;
+        font-size: 14px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(2)>h3 {
+        top: 93px;
+        left: 31px;
+        font-size: 13px;
+    }
+    main>:nth-child(7)>:nth-child(3)>:nth-child(4)>h3 {
+        top: 93px;
+        left: 31px;
+        font-size: 13px;
+    }
+    main>:nth-child(7)>:nth-child(3)>section>aside>img {
+        top: -5px;
+        height: 45px;
+    }
+    footer>:nth-child(2)>aside>img {
+        display: none;
+    }
+    #Get\ in\ touch {
+        left: 33%;
+        top: 0;
+        font-size: 30px;
+    }
+    footer {
+        background: rgba(69, 170, 242, 0.4);
+        top: -86px;
+    }
+    footer>:nth-child(2) {
+        left: 17px;
+        width: 92vw;
+        height: 355px;
+        border-radius: 20px;
+    }
+    #Name {
+        top: 28px;
+        left: 15px;
+        height: 40px;
+        width: 350px;
+        border-radius: 10px;
+    }
+    #Email {
+        top: 38px;
+        left: 15px;
+        height: 40px;
+        width: 350px;
+        border-radius: 10px;
+    }
+    #Message {
+        top: 48px;
+        left: 15px;
+        height: 100px;
+        width: 350px;
+        border-radius: 10px;
+    }
+    footer>:nth-child(2)>button {
+        bottom: 20px;
+        right: 21px;
+        width: 96px;
+        height: 35px;
+        border-radius: 10px;
+    }
+    footer>:nth-child(2)>button>p {
+        top: 1px;
+        font-size: 19px;
+    }
+    footer>:nth-child(3)>h3 {
+        top: 13px;
+        left: 20px;
+        font-size: 22px;
+    }
+    footer>:nth-child(3)>article>p {
+        position: relative;
+        display: inline-block;
+        top: 0;
+        left: 20px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    footer>:nth-child(3)>:nth-child(3) {
+        top: 200px;
+        left: 20px;
+        font-size: 22px;
+    }
+    footer>:nth-child(3)>:nth-child(4)>li>a {
+        font-size: 17px;
+    }
+    footer>:nth-child(3)>:nth-child(4) {
+        bottom: 115px;
+        left: 20px;
+    }
+    footer>:nth-child(3)>:nth-child(5)>li>a {
+        font-size: 17px;
+    }
+    footer>:nth-child(3)>:nth-child(5) {
+        bottom: 80px;
+        left: 20px;
+    }
+    footer>:nth-child(3)>:nth-child(6) {
+        bottom: 22px;
+        left: 20px;
+        font-size: 17px;
+    }
+    footer>:nth-child(3)>:nth-child(7) {
+        bottom: 4px;
+        left: 113px;
+        font-size: 14px;
+    }
+    footer>:nth-child(3) {
+        height: 420px;
+    }
 }
