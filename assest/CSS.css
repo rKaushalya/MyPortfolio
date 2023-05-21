@@ -2322,7 +2322,10 @@ main>:nth-child(1)>nav>button>a:hover {
         height: 420px;
     }
 }
-@media all and (max-width: 376px){
+@media all and (max-width: 400px){
+    .viewAssignment>a {
+        top: 340px;
+    }
     main>:nth-child(1)>article>:nth-child(1) {
         left: 20px;
         top: 23px;
@@ -2346,11 +2349,11 @@ main>:nth-child(1)>nav>button>a:hover {
         left: 57px;
     }
     main>:nth-child(2)>:nth-child(5) {
-        left: 20px;
+        left: 3px;
         font-size: 11px;
     }
     main>:nth-child(2)>:nth-child(4) {
-        left: 34px;
+        left: 10px;
         top: 406px;
         font-size: 11px;
     }
@@ -2498,7 +2501,7 @@ main>:nth-child(1)>nav>button>a:hover {
         right: 214px;
     }
 }
-@media all and (max-width: 321px){
+@media all and (max-width: 330px){
     main>:nth-child(1)>article>:nth-child(1) {
         top: 20px;
         font-size: 28px;
