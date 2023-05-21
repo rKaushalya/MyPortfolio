@@ -918,6 +918,13 @@ main>:nth-child(7)>:nth-child(3){
 main>:nth-child(1)>nav>button>a:hover {
     margin-right: 5px;
 }
+.viewAssignment>a{
+    position: relative;
+    top: 250px;
+    text-decoration: none;
+    font-size: 24px;
+    left: 65px;
+}
 /*@media all and (min-width: 1440px) and (max-width: 2560px){
     main>:nth-child(3)>:nth-child(8) {
         left: 83px;
@@ -2491,7 +2498,7 @@ main>:nth-child(1)>nav>button>a:hover {
         right: 214px;
     }
 }
-@media all and (max-width: 320px){
+@media all and (max-width: 321px){
     main>:nth-child(1)>article>:nth-child(1) {
         top: 20px;
         font-size: 28px;
