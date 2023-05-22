@@ -1012,7 +1012,11 @@ main>:nth-child(1)>nav>button>a:hover {
         font-size: 36px;
     }
     main>:nth-child(1)>article>:nth-child(3) {
-        left: 132px;
+        left: 233px;
+        top: 316px;
+    }
+    main>:nth-child(1)>article>:nth-child(4) {
+        left: 131px;
         top: 290px;
     }
     main>:nth-child(1)>nav>button {
@@ -1442,9 +1446,13 @@ main>:nth-child(1)>nav>button>a:hover {
         font-size: 30px;
     }
     main>:nth-child(1)>article>:nth-child(3) {
-        left: 66px;
-        top: 230px;
+        left: 165px;
+        top: 240px;
         font-size: 22px;
+    }
+    main>:nth-child(1)>article>:nth-child(4) {
+        left: 65px;
+        top: 213px;
     }
     main>:nth-child(1)>nav>button {
         left: 67px;
@@ -1915,9 +1923,14 @@ main>:nth-child(1)>nav>button>a:hover {
         font-size: 34px;
     }
     main>:nth-child(1)>article>:nth-child(3) {
-        left: 20px;
-        top: 135px;
-        font-size: 22px;
+        left: 105px;
+        top: 152px;
+        font-size: 18px;
+    }
+    main>:nth-child(1)>article>:nth-child(4) {
+        left: 22px;
+        top: 130px;
+        font-size: 20px;
     }
     main>:nth-child(1)>nav>button {
         left: 20px;
@@ -2401,8 +2414,14 @@ main>:nth-child(1)>nav>button>a:hover {
         font-size: 30px;
     }
     main>:nth-child(1)>article>:nth-child(3) {
-        top: 126px;
-        font-size: 20px;
+        top: 145px;
+        left: 95px;
+        font-size: 16px;
+    }
+    main>:nth-child(1)>article>:nth-child(4) {
+        left: 22px;
+        top: 125px;
+        font-size: 18px;
     }
     main>:nth-child(1)>nav>button {
         top: 192px;
@@ -2576,8 +2595,13 @@ main>:nth-child(1)>nav>button>a:hover {
         font-size: 28px;
     }
     main>:nth-child(1)>article>:nth-child(3) {
-        top: 124px;
-        font-size: 19px;
+        top: 134px;
+        left: 88px;
+        font-size: 16px;
+    }
+    main>:nth-child(1)>article>:nth-child(4) {
+        top: 118px;
+        font-size: 16px;
     }
     main>:nth-child(1)>nav>button {
         top: 190px;

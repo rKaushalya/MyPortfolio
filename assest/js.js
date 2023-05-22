@@ -3,7 +3,7 @@ const text = document.getElementById("typingText");
 
 const textLoad = ()=> {
     setTimeout(() => {
-        text.textContent = "Web Designing";
+        text.textContent = "UI/UX Designing";
     },0);
     setTimeout(() => {
         text.textContent = "Web Development";
