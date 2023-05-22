@@ -58,8 +58,15 @@ main>:nth-child(1)>article>:nth-child(2){
 }
 main>:nth-child(1)>article>:nth-child(3){
     position: absolute;
+    left: 275px;
+    top: 335px;
+    font-size: 24px;
+    color: #8d2a0a;
+}
+main>:nth-child(1)>article>:nth-child(4) {
+    position: absolute;
     left: 177px;
-    top: 318px;
+    top: 310px;
     font-size: 24px;
 }
 main>:nth-child(1)>nav>button{
@@ -960,6 +967,10 @@ main>:nth-child(1)>nav>button>a:hover {
     font-size: 24px;
     left: 65px;
 }
+/*#typingText{
+    font-size: 24px;
+    color: #8d2a0a;
+}*/
 #typingText:before{
     content: "";
     position: absolute;
@@ -969,7 +980,7 @@ main>:nth-child(1)>nav>button>a:hover {
     width: 100%;
     background-color: #eeeeee;
     border-left: 2px solid blue;
-    animation: typing 5s steps(12) infinite;
+    animation: typing 4s steps(12) infinite;
 }
 @keyframes typing {
     40%, 60%{
