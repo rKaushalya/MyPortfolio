@@ -58,7 +58,7 @@
                     <div class="col-3">
                         <div style="display: flex; flex-direction: column">
                             <div style="height: 40px"></div>
-                            <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px">Add</button>
+                            <button id="addItem" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px">Add</button>
                             <div style="height: 40px"></div>
                             <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px;background-color: green">Update</button>
                             <div style="height: 40px"></div>
@@ -83,28 +83,41 @@
                 <th scope="col">Quantity</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-            </tr>
+            <tbody id="tbl">
             </tbody>
         </table>
     </div>
 </div>
+
+<script>
+    document.getElementById("addItem").addEventListener("click",function () {
+        let table = document.getElementById("tbl");
+
+        let id = document.getElementById("exampleInputItemCode").value;
+        let name = document.getElementById("exampleInputItemName").value;
+        let price = document.getElementById("exampleInputPrice").value;
+        let qty = document.getElementById("exampleInputQty").value;
+
+        let tr = document.createElement("tr");
+
+        var col1 = document.createElement("td");
+        var col2 = document.createElement("td");
+        var col3 = document.createElement("td");
+        var col4 = document.createElement("td");
+
+        col1.textContent=id;
+        col2.textContent=name;
+        col3.textContent=price;
+        col4.textContent=qty;
+
+        tr.appendChild(col1);
+        tr.appendChild(col2);
+        tr.appendChild(col3);
+        tr.appendChild(col4);
+
+        table.appendChild(tr);
+    })
+</script>
 <script src="../../../assest/Bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>

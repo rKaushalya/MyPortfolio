@@ -979,7 +979,7 @@ main>:nth-child(1)>nav>button>a:hover {
     height: 100%;
     width: 100%;
     background-color: #eeeeee;
-    border-left: 2px solid blue;
+    border-left: 2px solid #8d2a0a;
     animation: typing 4s steps(12) infinite;
 }
 @keyframes typing {
