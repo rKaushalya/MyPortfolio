@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="Viewport" content="Width=device-width, initial-scale=1">
+    <title>Assignment 01</title>
+  <link rel="stylesheet" href="../../../assest/normalize.css">
+
+  <style>
+    body>section{
+      position: relative;
+      background-color: gray;
+      height: 100vh;
+    }
+    body>h1{
+      position: absolute;
+      top: 100px;
+      left: 550px;
+      z-index: 1;
+    }
+    #line1{
+      position: absolute;
+      width: 700px;
+      height: 2px;
+      top: 300px;
+      left: 285px;
+      background-color: #eeeeee;
+      z-index: 1;
+    }
+    #line2{
+      position: absolute;
+      width: 700px;
+      height: 2px;
+      top: 400px;
+      left: 285px;
+      background-color: #eeeeee;
+      z-index: 1;
+    }
+    #box1{
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background-color: #0a53be;
+      top: 207px;
+      left: 300px;
+    }
+    #box2{
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background-color: #0a53be;
+      top: 231px;
+      left: 410px;
+    }
+    #box3{
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background-color: #0a53be;
+      top: 152px;
+      left: 528px;
+    }
+    #box4{
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background-color: #0a53be;
+      top: 73px;
+      left: 647px;
+    }
+    #box5{
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background-color: #0a53be;
+      top: -7px;
+      left: 769px;
+    }
+    #box6{
+      position: relative;
+      width: 80px;
+      height: 80px;
+      left: 905px;
+      top: 10px;
+    }
+  </style>
+
+</head>
+<body>
+<h1>Javascript Ques</h1>
+
+<div id="line1"></div>
+<div id="line2"></div>
+<section>
+  <div id="box1"></div>
+  <div id="box2"></div>
+  <div id="box3"></div>
+  <div id="box4"></div>
+  <div id="box5"></div>
+  <div id="box6"></div>
+</section>
+
+<script>
+  let colors = ["red","yellow","green","blue","deeppink","orange"];
+
+    setInterval(function () {
+      let divArray = document.querySelector("section").children;
+
+      for (let i = 0; i < divArray.length; i++) {
+        divArray[i].style.background = colors[i];
+      }
+      let col = colors.pop();
+      colors.unshift(col);
+    },200);
+
+</script>
+</body>
+</html>

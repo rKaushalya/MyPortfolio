@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 02</title>
+    <link rel="stylesheet" href="../../../assest/normalize.css">
+
+    <style>
+        body>section{
+            position: absolute;
+            width: 80vw;
+            height: 100px;
+            top: 250px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+        }
+        body>section>div{
+            border: 1px solid red;
+            flex-grow: 1;
+        }
+        #btn1{
+            position: absolute;
+            height: 40px;
+            width: 80px;
+            top: 417px;
+            left: 500px;
+            background-color: #ff253a;
+            border-radius: 20px;
+        }
+        #btn2{
+            position: absolute;
+            height: 40px;
+            width: 80px;
+            top: 417px;
+            left: 395px;
+            background-color: #0a53be;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+<button id="btn1">Stop</button>
+<button id="btn2">Start</button>
+
+<script>
+
+    let divArray = document.querySelector("section").children;
+    let id;
+    let i = 0;
+
+    id = setInterval(function () {
+        if(i > 0){
+            divArray[i-1].style.background="white";
+        }else {
+            divArray[4].style.background="white";
+        }
+        divArray[i].style.background="red";
+        i++;
+        if (i == divArray.length){
+            i = 0;
+        }
+    },500);
+
+</script>
+</body>
+</html>
