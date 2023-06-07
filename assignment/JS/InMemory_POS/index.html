@@ -32,6 +32,7 @@
 </nav>
 
 <div id="content"></div>
+<script src="../../../assest/jquery/jquery-3.7.0.min.js"></script>
 <script>
     var pages = {
         'home' : `<div><div class="container text-body">
@@ -380,6 +381,26 @@
                 break;
         }
         document.getElementById('content').innerHTML = contentToReturn;
+
+        $("#search").click(function () {
+            let id = $("#exampleInputCusId").val();
+            let name = $("#exampleInputName").val();
+            let address = $("#exampleInputAddress").val();
+            let contact = $("#exampleInputContact").val();
+            let salary = $("#exampleInputSalary").val();
+
+            let col1 = "<td>"+id+"</td>";
+            let col2 = "<td>"+name+"</td>";
+            let col3 = "<td>"+address+"</td>";
+            let col4 = "<td>"+contact+"</td>";
+            let col5 = "<td>"+salary+"</td>";
+
+            $("#tbl").append(col1);
+            $("#tbl").append(col2);
+            $("#tbl").append(col3);
+            $("#tbl").append(col4);
+            $("#tbl").append(col5);
+        });
     }
 
 

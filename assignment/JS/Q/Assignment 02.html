@@ -53,22 +53,50 @@
 
 <script>
 
-    let divArray = document.querySelector("section").children;
-    let id;
-    let i = 0;
+    document.getElementById("btn2").addEventListener("click",function () {
+        clearInterval(id1);
+        clearInterval(id2);
+        repeatedFun();
+    });
 
-    id = setInterval(function () {
-        if(i > 0){
-            divArray[i-1].style.background="white";
-        }else {
-            divArray[4].style.background="white";
-        }
-        divArray[i].style.background="red";
-        i++;
-        if (i == divArray.length){
-            i = 0;
-        }
-    },500);
+    document.getElementById("btn1").addEventListener("click",function () {
+        clearInterval(id1);
+        clearInterval(id2);
+    });
+
+    let divArray = document.querySelector("section").children;
+    let id1;
+    let id2;
+    let i = 0;
+    let j = divArray.length-1;
+
+    function repeatedFun() {
+        id1 = setInterval(function () {
+            if (i > 0) {
+                divArray[i - 1].style.background = "white";
+            } else {
+                divArray[4].style.background = "white";
+            }
+            divArray[i].style.background = "red";
+            i++;
+            if (i == divArray.length) {
+                i = 0;
+                clearInterval(id1);
+                id2 = setInterval(function () {
+                    if (j > 0) {
+                        divArray[j].style.background = "white";
+                    }
+                    divArray[j - 1].style.background = "red";
+                    j--;
+                    if (j == 0) {
+                        j = divArray.length-1;
+                        clearInterval(id2);
+                        repeatedFun();
+                    }
+                }, 150);
+            }
+        }, 150);
+    }
 
 </script>
 </body>
