@@ -38,6 +38,24 @@
             background-color: #0a53be;
             border-radius: 20px;
         }
+        #btn3{
+            position: absolute;
+            height: 40px;
+            width: 80px;
+            top: 417px;
+            left: 1000px;
+            background-color: #ce5314;
+            border-radius: 20px;
+        }
+        #btn4{
+            position: absolute;
+            height: 40px;
+            width: 80px;
+            top: 417px;
+            left: 900px;
+            background-color: #d4d125;
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
@@ -49,54 +67,374 @@
         <div></div>
     </section>
 <button id="btn1">Stop</button>
-<button id="btn2">Start</button>
+<button id="btn2">Resume</button>
+<button id="btn3">Fast</button>
+<button id="btn4">slow</button>
 
 <script>
 
+    let divArray = document.querySelector("section").children;
+    let id1;
+    let i = 0;
+    let speed = 100;
+
     document.getElementById("btn2").addEventListener("click",function () {
-        clearInterval(id1);
-        clearInterval(id2);
-        repeatedFun();
+        id1 = setInterval(function () {
+            if (i == 0) {
+                divArray[i].style.background = "red";
+            } else if(i == 1){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+            }else if (i == 2){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+            }else if (i == 3){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+            }else if (i == 4){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+            }else if (i == 5){
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 6){
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 7){
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 8){
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 9){
+                divArray[i-5].style.background = "white";
+            }else if (i == 10){
+                divArray[i-6].style.background = "red";
+            }else if (i == 11){
+                divArray[i-8].style.background = "red";
+                divArray[i-7].style.background = "#802d33";
+            }else if (i == 12){
+                divArray[i-10].style.background = "red";
+                divArray[i-9].style.background = "#802d33";
+                divArray[i-8].style.background = "#b36c5c";
+            }else if (i == 13){
+                divArray[i-12].style.background = "red";
+                divArray[i-11].style.background = "#802d33";
+                divArray[i-10].style.background = "#b36c5c";
+                divArray[i-9].style.background = "#d09e93";
+            }else if (i == 14){
+                divArray[i-14].style.background = "red";
+                divArray[i-13].style.background = "#802d33";
+                divArray[i-12].style.background = "#b36c5c";
+                divArray[i-11].style.background = "#d09e93";
+                divArray[i-10].style.background = "#cdb6b1";
+            }else if (i == 15){
+                divArray[i-15].style.background = "#802d33";
+                divArray[i-14].style.background = "#b36c5c";
+                divArray[i-13].style.background = "#d09e93";
+                divArray[i-12].style.background = "#cdb6b1";
+                divArray[i-11].style.background = "white";
+            }else if (i == 16){
+                divArray[i-16].style.background = "#b36c5c";
+                divArray[i-15].style.background = "#d09e93";
+                divArray[i-14].style.background = "#cdb6b1";
+                divArray[i-13].style.background = "white";
+            }else if (i == 17){
+                divArray[i-17].style.background = "#d09e93";
+                divArray[i-16].style.background = "#cdb6b1";
+                divArray[i-15].style.background = "white";
+            }else if (i == 18){
+                divArray[i-18].style.background = "#cdb6b1";
+                divArray[i-17].style.background = "white";
+            }else if (i == 19){
+                divArray[i-19].style.background = "white";
+                i = -1;
+            }
+            i++;
+        }, 100);
     });
 
     document.getElementById("btn1").addEventListener("click",function () {
         clearInterval(id1);
-        clearInterval(id2);
     });
 
-    let divArray = document.querySelector("section").children;
-    let id1;
-    let id2;
-    let i = 0;
-    let j = divArray.length-1;
-
-    function repeatedFun() {
+    document.getElementById("btn3").addEventListener("click",function () {
+        speed = 50;
+        clearInterval(id1);
         id1 = setInterval(function () {
-            if (i > 0) {
-                divArray[i - 1].style.background = "white";
-            } else {
-                divArray[4].style.background = "white";
+            if (i == 0) {
+                divArray[i].style.background = "red";
+            } else if(i == 1){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+            }else if (i == 2){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+            }else if (i == 3){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+            }else if (i == 4){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+            }else if (i == 5){
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 6){
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 7){
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 8){
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 9){
+                divArray[i-5].style.background = "white";
+            }else if (i == 10){
+                divArray[i-6].style.background = "red";
+            }else if (i == 11){
+                divArray[i-8].style.background = "red";
+                divArray[i-7].style.background = "#802d33";
+            }else if (i == 12){
+                divArray[i-10].style.background = "red";
+                divArray[i-9].style.background = "#802d33";
+                divArray[i-8].style.background = "#b36c5c";
+            }else if (i == 13){
+                divArray[i-12].style.background = "red";
+                divArray[i-11].style.background = "#802d33";
+                divArray[i-10].style.background = "#b36c5c";
+                divArray[i-9].style.background = "#d09e93";
+            }else if (i == 14){
+                divArray[i-14].style.background = "red";
+                divArray[i-13].style.background = "#802d33";
+                divArray[i-12].style.background = "#b36c5c";
+                divArray[i-11].style.background = "#d09e93";
+                divArray[i-10].style.background = "#cdb6b1";
+            }else if (i == 15){
+                divArray[i-15].style.background = "#802d33";
+                divArray[i-14].style.background = "#b36c5c";
+                divArray[i-13].style.background = "#d09e93";
+                divArray[i-12].style.background = "#cdb6b1";
+                divArray[i-11].style.background = "white";
+            }else if (i == 16){
+                divArray[i-16].style.background = "#b36c5c";
+                divArray[i-15].style.background = "#d09e93";
+                divArray[i-14].style.background = "#cdb6b1";
+                divArray[i-13].style.background = "white";
+            }else if (i == 17){
+                divArray[i-17].style.background = "#d09e93";
+                divArray[i-16].style.background = "#cdb6b1";
+                divArray[i-15].style.background = "white";
+            }else if (i == 18){
+                divArray[i-18].style.background = "#cdb6b1";
+                divArray[i-17].style.background = "white";
+            }else if (i == 19){
+                divArray[i-19].style.background = "white";
+                i = -1;
             }
-            divArray[i].style.background = "red";
             i++;
-            if (i == divArray.length) {
-                i = 0;
-                clearInterval(id1);
-                id2 = setInterval(function () {
-                    if (j > 0) {
-                        divArray[j].style.background = "white";
-                    }
-                    divArray[j - 1].style.background = "red";
-                    j--;
-                    if (j == 0) {
-                        j = divArray.length-1;
-                        clearInterval(id2);
-                        repeatedFun();
-                    }
-                }, 150);
+        }, speed);
+    });
+
+    document.getElementById("btn4").addEventListener("click",function () {
+        speed = 250;
+        clearInterval(id1);
+        id1 = setInterval(function () {
+            if (i == 0) {
+                divArray[i].style.background = "red";
+            } else if(i == 1){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+            }else if (i == 2){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+            }else if (i == 3){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+            }else if (i == 4){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+            }else if (i == 5){
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 6){
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 7){
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 8){
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 9){
+                divArray[i-5].style.background = "white";
+            }else if (i == 10){
+                divArray[i-6].style.background = "red";
+            }else if (i == 11){
+                divArray[i-8].style.background = "red";
+                divArray[i-7].style.background = "#802d33";
+            }else if (i == 12){
+                divArray[i-10].style.background = "red";
+                divArray[i-9].style.background = "#802d33";
+                divArray[i-8].style.background = "#b36c5c";
+            }else if (i == 13){
+                divArray[i-12].style.background = "red";
+                divArray[i-11].style.background = "#802d33";
+                divArray[i-10].style.background = "#b36c5c";
+                divArray[i-9].style.background = "#d09e93";
+            }else if (i == 14){
+                divArray[i-14].style.background = "red";
+                divArray[i-13].style.background = "#802d33";
+                divArray[i-12].style.background = "#b36c5c";
+                divArray[i-11].style.background = "#d09e93";
+                divArray[i-10].style.background = "#cdb6b1";
+            }else if (i == 15){
+                divArray[i-15].style.background = "#802d33";
+                divArray[i-14].style.background = "#b36c5c";
+                divArray[i-13].style.background = "#d09e93";
+                divArray[i-12].style.background = "#cdb6b1";
+                divArray[i-11].style.background = "white";
+            }else if (i == 16){
+                divArray[i-16].style.background = "#b36c5c";
+                divArray[i-15].style.background = "#d09e93";
+                divArray[i-14].style.background = "#cdb6b1";
+                divArray[i-13].style.background = "white";
+            }else if (i == 17){
+                divArray[i-17].style.background = "#d09e93";
+                divArray[i-16].style.background = "#cdb6b1";
+                divArray[i-15].style.background = "white";
+            }else if (i == 18){
+                divArray[i-18].style.background = "#cdb6b1";
+                divArray[i-17].style.background = "white";
+            }else if (i == 19){
+                divArray[i-19].style.background = "white";
+                i = -1;
             }
-        }, 150);
-    }
+            i++;
+        }, speed);
+    });
+
+    id1 = setInterval(function () {
+            if (i == 0) {
+                divArray[i].style.background = "red";
+            } else if(i == 1){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+            }else if (i == 2){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+            }else if (i == 3){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+            }else if (i == 4){
+                divArray[i].style.background = "red";
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+            }else if (i == 5){
+                divArray[i-1].style.background = "#802d33";
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 6){
+                divArray[i-2].style.background = "#b36c5c";
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 7){
+                divArray[i-3].style.background = "#d09e93";
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 8){
+                divArray[i-4].style.background = "#cdb6b1";
+                divArray[i-5].style.background = "white";
+            }else if (i == 9){
+                divArray[i-5].style.background = "white";
+            }else if (i == 10){
+                divArray[i-6].style.background = "red";
+            }else if (i == 11){
+                divArray[i-8].style.background = "red";
+                divArray[i-7].style.background = "#802d33";
+            }else if (i == 12){
+                divArray[i-10].style.background = "red";
+                divArray[i-9].style.background = "#802d33";
+                divArray[i-8].style.background = "#b36c5c";
+            }else if (i == 13){
+                divArray[i-12].style.background = "red";
+                divArray[i-11].style.background = "#802d33";
+                divArray[i-10].style.background = "#b36c5c";
+                divArray[i-9].style.background = "#d09e93";
+            }else if (i == 14){
+                divArray[i-14].style.background = "red";
+                divArray[i-13].style.background = "#802d33";
+                divArray[i-12].style.background = "#b36c5c";
+                divArray[i-11].style.background = "#d09e93";
+                divArray[i-10].style.background = "#cdb6b1";
+            }else if (i == 15){
+                divArray[i-15].style.background = "#802d33";
+                divArray[i-14].style.background = "#b36c5c";
+                divArray[i-13].style.background = "#d09e93";
+                divArray[i-12].style.background = "#cdb6b1";
+                divArray[i-11].style.background = "white";
+            }else if (i == 16){
+                divArray[i-16].style.background = "#b36c5c";
+                divArray[i-15].style.background = "#d09e93";
+                divArray[i-14].style.background = "#cdb6b1";
+                divArray[i-13].style.background = "white";
+            }else if (i == 17){
+                divArray[i-17].style.background = "#d09e93";
+                divArray[i-16].style.background = "#cdb6b1";
+                divArray[i-15].style.background = "white";
+            }else if (i == 18){
+                divArray[i-18].style.background = "#cdb6b1";
+                divArray[i-17].style.background = "white";
+            }else if (i == 19){
+                divArray[i-19].style.background = "white";
+                i = -1;
+            }
+            i++;
+        }, speed);
 
 </script>
 </body>
