@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <style>
+        body{
+            background-image: url("../../../assest/assignment/background.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        body>section{
+            background-color: rgba(107, 186, 206, 0.4);
+            position: absolute;
+            width: 40vw;
+            height: 50vh;
+            border: 1px solid black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        body>section>button{
+            background-color: #ea5252;
+            position: relative;
+            width: 80px;
+            height: 60px;
+            top: 20px;
+            left: 15px;
+        }
+        body>section>button:hover{
+            background-color: #ff2d46;
+        }
+        body>section>button>p{
+            position: relative;
+            top: -10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        body>section>div{
+            position: absolute;
+            width: 450px;
+            height: 60px;
+            top: 20px;
+            right: 15px;
+            border: 1px solid black;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+        body>section>section{
+            position: relative;
+            top: 40px;
+            left: 15px;
+            width: 545px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 3px;
+        }
+        .btn{
+            height: 75px;
+            box-shadow: 1px 2px 3px -3px black;
+        }
+        .btn:hover{
+            background-color: #0a53be;
+        }
+        .btn>p{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <button><p>C</p></button>
+    <div></div>
+    <section>
+        <button id="b1" class="btn" style="background-color: #d7d7d7"><p>7</p></button>
+        <button id="b2" class="btn" style="background-color: #d7d7d7"><p>8</p></button>
+        <button id="b3" class="btn" style="background-color: #d7d7d7"><p>9</p></button>
+        <button id="b4" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>+</p></button>
+        <button id="b5" class="btn" style="background-color: #d7d7d7"><p>4</p></button>
+        <button id="b6" class="btn" style="background-color: #d7d7d7"><p>5</p></button>
+        <button id="b7" class="btn" style="background-color: #d7d7d7"><p>6</p></button>
+        <button id="b8" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>-</p></button>
+        <button id="b9" class="btn" style="background-color: #d7d7d7"><p>1</p></button>
+        <button id="b10" class="btn" style="background-color: #d7d7d7"><p>2</p></button>
+        <button id="b11" class="btn" style="background-color: #d7d7d7"><p>3</p></button>
+        <button id="b12" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>/</p></button>
+        <button id="b13" class="btn" style="background-color: #d7d7d7"><p>0</p></button>
+        <button id="b14" class="btn" style="background-color: #d7d7d7"><p>.</p></button>
+        <button id="b15" class="btn" style="background-color: #9fb453"><p>=</p></button>
+        <button id="b16" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>*</p></button>
+    </section>
+</section>
+</body>
+</html>
