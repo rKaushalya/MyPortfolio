@@ -85,7 +85,6 @@
 <section>
     <button id="c"><p>C</p></button>
     <div id="display"></div>
-<!--    <input id="display" type="text">-->
     <section>
         <button id="b7" class="btn" style="background-color: #d7d7d7"><p>7</p></button>
         <button id="b8" class="btn" style="background-color: #d7d7d7"><p>8</p></button>
@@ -193,6 +192,14 @@
             tempDiv = 0;
         }
     });
+    document.getElementById("b.").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append(".");
+        }else {
+            document.getElementById("display").innerText = ".";
+            tempDiv = 0;
+        }
+    });
 
     document.getElementById("c").addEventListener("click",function () {
         document.getElementById("display").innerText="";
@@ -207,10 +214,49 @@
         console.log(displayDiv);
     });
 
+    document.getElementById("b-").addEventListener("click",function () {
+        displayDiv = document.getElementById("display").innerText;
+        setDoTo = 2;
+        tempDiv = 1;
+        console.log(displayDiv);
+    });
+
+    document.getElementById("b/").addEventListener("click",function () {
+        displayDiv = document.getElementById("display").innerText;
+        setDoTo = 3;
+        tempDiv = 1;
+        console.log(displayDiv);
+    });
+
+    document.getElementById("b*").addEventListener("click",function () {
+        displayDiv = document.getElementById("display").innerText;
+        setDoTo = 4;
+        tempDiv = 1;
+        console.log(displayDiv);
+    });
+
     document.getElementById("b=").addEventListener("click",function () {
         if (setDoTo == 1){
             let temp = document.getElementById("display").innerText;
             displayDiv = parseInt(displayDiv) + parseInt(temp);
+            document.getElementById("display").innerText = displayDiv;
+            setDoTo=0;
+        }
+        else if (setDoTo == 2){
+            let temp = document.getElementById("display").innerText;
+            displayDiv = parseInt(displayDiv) - parseInt(temp);
+            document.getElementById("display").innerText = displayDiv;
+            setDoTo=0;
+        }
+        else if (setDoTo == 3){
+            let temp = document.getElementById("display").innerText;
+            displayDiv = parseInt(displayDiv) / parseInt(temp);
+            document.getElementById("display").innerText = displayDiv;
+            setDoTo=0;
+        }
+        else if (setDoTo == 4){
+            let temp = document.getElementById("display").innerText;
+            displayDiv = parseInt(displayDiv) * parseInt(temp);
             document.getElementById("display").innerText = displayDiv;
             setDoTo=0;
         }
