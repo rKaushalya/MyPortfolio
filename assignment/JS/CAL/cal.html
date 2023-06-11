@@ -27,11 +27,11 @@
             position: relative;
             width: 80px;
             height: 60px;
-            top: 20px;
+            top: 23px;
             left: 15px;
         }
         body>section>button:hover{
-            background-color: #ff2d46;
+            background-color: #f50724;
         }
         body>section>button>p{
             position: relative;
@@ -45,6 +45,12 @@
             height: 60px;
             top: 20px;
             right: 15px;
+            font-size: 34px;
+            padding-top: 5px;
+            padding-bottom: 0;
+            color: #eeeeee;
+            outline: none;
+            text-align: right;
             border: 1px solid black;
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
         }
@@ -60,6 +66,7 @@
         }
         .btn{
             height: 75px;
+            cursor: pointer;
             box-shadow: 1px 2px 3px -3px black;
         }
         .btn:hover{
@@ -69,30 +76,145 @@
             font-size: 24px;
             font-weight: bold;
         }
+        button{
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
 <section>
-    <button><p>C</p></button>
-    <div></div>
+    <button id="c"><p>C</p></button>
+    <div id="display"></div>
+<!--    <input id="display" type="text">-->
     <section>
-        <button id="b1" class="btn" style="background-color: #d7d7d7"><p>7</p></button>
-        <button id="b2" class="btn" style="background-color: #d7d7d7"><p>8</p></button>
-        <button id="b3" class="btn" style="background-color: #d7d7d7"><p>9</p></button>
-        <button id="b4" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>+</p></button>
-        <button id="b5" class="btn" style="background-color: #d7d7d7"><p>4</p></button>
-        <button id="b6" class="btn" style="background-color: #d7d7d7"><p>5</p></button>
-        <button id="b7" class="btn" style="background-color: #d7d7d7"><p>6</p></button>
-        <button id="b8" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>-</p></button>
-        <button id="b9" class="btn" style="background-color: #d7d7d7"><p>1</p></button>
-        <button id="b10" class="btn" style="background-color: #d7d7d7"><p>2</p></button>
-        <button id="b11" class="btn" style="background-color: #d7d7d7"><p>3</p></button>
-        <button id="b12" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>/</p></button>
-        <button id="b13" class="btn" style="background-color: #d7d7d7"><p>0</p></button>
-        <button id="b14" class="btn" style="background-color: #d7d7d7"><p>.</p></button>
-        <button id="b15" class="btn" style="background-color: #9fb453"><p>=</p></button>
-        <button id="b16" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>*</p></button>
+        <button id="b7" class="btn" style="background-color: #d7d7d7"><p>7</p></button>
+        <button id="b8" class="btn" style="background-color: #d7d7d7"><p>8</p></button>
+        <button id="b9" class="btn" style="background-color: #d7d7d7"><p>9</p></button>
+        <button id="b+" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>+</p></button>
+        <button id="b4" class="btn" style="background-color: #d7d7d7"><p>4</p></button>
+        <button id="b5" class="btn" style="background-color: #d7d7d7"><p>5</p></button>
+        <button id="b6" class="btn" style="background-color: #d7d7d7"><p>6</p></button>
+        <button id="b-" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>-</p></button>
+        <button id="b1" class="btn" style="background-color: #d7d7d7"><p>1</p></button>
+        <button id="b2" class="btn" style="background-color: #d7d7d7"><p>2</p></button>
+        <button id="b3" class="btn" style="background-color: #d7d7d7"><p>3</p></button>
+        <button id="b/" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>/</p></button>
+        <button id="b0" class="btn" style="background-color: #d7d7d7"><p>0</p></button>
+        <button id="b." class="btn" style="background-color: #d7d7d7"><p>.</p></button>
+        <button id="b=" class="btn" style="background-color: #9fb453"><p>=</p></button>
+        <button id="b*" class="btn" style="background-color: rgba(117,211,248,0.9)"><p>*</p></button>
     </section>
 </section>
+
+<script>
+    let tempDiv = 0;
+    let setDoTo = 0;
+    let displayDiv;
+
+    document.getElementById("b0").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("0");
+        }else {
+            document.getElementById("display").innerText = "0";
+            tempDiv = 0;
+        }
+
+    });
+    document.getElementById("b1").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("1");
+        }else {
+            document.getElementById("display").innerText = "1";
+            tempDiv = 0;
+        }
+    });
+    document.getElementById("b2").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("2");
+        }else {
+            document.getElementById("display").innerText = "2";
+            tempDiv = 0;
+        }
+
+    });
+    document.getElementById("b3").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("3");
+        }else {
+            document.getElementById("display").innerText = "3";
+            tempDiv = 0;
+        }
+    });
+    document.getElementById("b4").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("4");
+        }else {
+            document.getElementById("display").innerText = "4";
+            tempDiv = 0;
+        }
+    });
+    document.getElementById("b5").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("5");
+        }else {
+            document.getElementById("display").innerText = "5";
+            tempDiv = 0;
+        }
+    });
+    document.getElementById("b6").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("6");
+        }else {
+            document.getElementById("display").innerText = "6";
+            tempDiv = 0;
+        }
+    });
+    document.getElementById("b7").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("7");
+        }else {
+            document.getElementById("display").innerText = "7";
+            tempDiv = 0;
+        }
+    });
+    document.getElementById("b8").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("8");
+        }else {
+            document.getElementById("display").innerText = "8";
+            tempDiv = 0;
+        }
+    });
+    document.getElementById("b9").addEventListener("click",function () {
+        if (tempDiv == 0){
+            document.getElementById("display").append("9");
+        }else {
+            document.getElementById("display").innerText = "9";
+            tempDiv = 0;
+        }
+    });
+
+    document.getElementById("c").addEventListener("click",function () {
+        document.getElementById("display").innerText="";
+        setDoTo=0;
+        tempDiv=0;
+    });
+
+    document.getElementById("b+").addEventListener("click",function () {
+        displayDiv = document.getElementById("display").innerText;
+        setDoTo = 1;
+        tempDiv = 1;
+        console.log(displayDiv);
+    });
+
+    document.getElementById("b=").addEventListener("click",function () {
+        if (setDoTo == 1){
+            let temp = document.getElementById("display").innerText;
+            displayDiv = parseInt(displayDiv) + parseInt(temp);
+            document.getElementById("display").innerText = displayDiv;
+            setDoTo=0;
+        }
+    });
+</script>
 </body>
 </html>
