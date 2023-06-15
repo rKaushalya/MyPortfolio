@@ -36,6 +36,7 @@
 <script>
 
     let mainArray = [];
+    let itemArray = [];
 
     var pages = {
         'home' : `<div><div class="container text-body">
@@ -176,7 +177,7 @@
                                 <div style="height: 50px"></div>
                                 <button id="update" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 50px;font-size: 20px;background-color: green">Update</button>
                                 <div style="height: 50px"></div>
-                                <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 50px;font-size: 20px;background-color: #ff253a">Delete</button>
+                                <button id="delete" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 50px;font-size: 20px;background-color: #ff253a">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -232,13 +233,13 @@
                         <div class="col-3">
                             <div style="display: flex; flex-direction: column">
                                 <div style="height: 40px"></div>
-                                <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px">Add</button>
+                                <button id="addItem" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px">Add</button>
                                 <div style="height: 40px"></div>
-                                <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px;background-color: green">Update</button>
+                                <button id="updateItem" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px;background-color: green">Update</button>
                                 <div style="height: 40px"></div>
-                                <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px;background-color: yellow; color: black">Search</button>
+                                <button id="searchItem" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px;background-color: yellow; color: black">Search</button>
                                 <div style="height: 40px"></div>
-                                <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px;background-color: #ff253a">Delete</button>
+                                <button id="deleteItem" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 40px;font-size: 20px;background-color: #ff253a">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -257,24 +258,7 @@
                     <th scope="col">Quantity</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
+                <tbody id="tblItem">
                 </tbody>
             </table>
         </div>
@@ -385,8 +369,7 @@
         }
         document.getElementById('content').innerHTML = contentToReturn;
 
-        $("#search").click(function () {
-
+        function search(){
             $("#tbl").empty();
             for (let i = 0; i < mainArray.length; i++) {
                 let id = mainArray[i].id;
@@ -404,7 +387,12 @@
                        </tr>`;
 
                 $("#tbl").append(row);
+                bindTrEvent();
             }
+        }
+
+        $("#search").click(function () {
+            search();
         });
 
         $("#update").click(function () {
@@ -423,6 +411,120 @@
             };
 
             mainArray.push(customer);
+        });
+
+        function bindTrEvent(){
+            $("#tbl>tr").click(function () {
+                let id = $(this).children().eq(0).text();
+                let name = $(this).children().eq(1).text();
+                let address = $(this).children().eq(2).text();
+                let contact = $(this).children().eq(3).text();
+                let salary = $(this).children().eq(4).text();
+
+                $("#exampleInputCusId").val(id);
+                $("#exampleInputName").val(name);
+                $("#exampleInputAddress").val(address);
+                $("#exampleInputContact").val(contact);
+                $("#exampleInputSalary").val(salary);
+            });
+        }
+
+        $("#delete").click(function () {
+            let id1 = $("#exampleInputCusId").val();
+            for (let i = 0; i < mainArray.length; i++) {
+                if (mainArray[i].id == id1){
+                    mainArray.splice(i,1);
+                }
+            }
+            search();
+        });
+
+        //Item form functions
+
+        $("#addItem").click(function () {
+            let code = $("#exampleInputItemCode").val();
+            let name = $("#exampleInputItemName").val();
+            let price = $("#exampleInputPrice").val();
+            let qty = $("#exampleInputQty").val();
+
+            let item = {
+                code:code,
+                name:name,
+                price:price,
+                qty:qty,
+            };
+
+            itemArray.push(item);
+        });
+
+        function itemSearch(){
+            $("#tblItem").empty();
+            for (let i = 0; i < itemArray.length; i++) {
+                let code = itemArray[i].code;
+                let name = itemArray[i].name;
+                let price = itemArray[i].price;
+                let qty = itemArray[i].qty;
+
+                let row = `<tr>
+                           <td>${code}</td>
+                           <td>${name}</td>
+                           <td>${price}</td>
+                           <td>${qty}</td>
+                       </tr>`;
+
+                $("#tblItem").append(row);
+                itemBindTrEvent()
+            }
+        }
+
+        $("#searchItem").click(function () {
+            itemSearch();
+        });
+
+        function itemBindTrEvent(){
+            $("#tblItem>tr").click(function () {
+                let code = $(this).children().eq(0).text();
+                let name = $(this).children().eq(1).text();
+                let price = $(this).children().eq(2).text();
+                let qty = $(this).children().eq(3).text();
+
+                $("#exampleInputItemCode").val(code);
+                $("#exampleInputItemName").val(name);
+                $("#exampleInputPrice").val(price);
+                $("#exampleInputQty").val(qty);
+            });
+        }
+
+        $("#deleteItem").click(function () {
+            let tempCode = $("#exampleInputItemCode").val();
+
+            let ok = confirm("Do you want delete.!");
+
+            if (ok){
+                for (let i = 0; i < itemArray.length; i++) {
+                    if (itemArray[i].code == tempCode){
+                        itemArray.splice(i,1);
+                    }
+                }
+                itemSearch();
+            }
+        });
+
+        $("#updateItem").click(function () {
+            let tempCode = $("#exampleInputItemCode").val();
+
+            let ok = confirm("Do you want update.!");
+            if (ok){
+                for (let i = 0; i < itemArray.length; i++) {
+                    if (itemArray[i].code == tempCode){
+                        itemArray[i].name = $("#exampleInputItemName").val();
+                        itemArray[i].price = $("#exampleInputPrice").val();
+                        itemArray[i].qty =  $("#exampleInputQty").val();
+                        itemSearch();
+                        break;
+                    }
+                }
+            }
         });
     }
 
