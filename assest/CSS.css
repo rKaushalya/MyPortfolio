@@ -561,12 +561,12 @@ main>:nth-child(5)>div>:nth-child(1){
 main>:nth-child(5)>div>:nth-child(2){
     position: relative;
     top: 76px;
-    left: 38px;
+    left: 3%;
 }
 main>:nth-child(5)>div>:nth-child(3){
     position: relative;
     top: 36px;
-    left: 4px;
+    left: 3%;
 }
 main>:nth-child(5)>div>:nth-child(4){
     position: relative;
@@ -576,12 +576,12 @@ main>:nth-child(5)>div>:nth-child(4){
 main>:nth-child(5)>div>:nth-child(5){
     position: relative;
     top: 94px;
-    left: 5px;
+    left: -2%;
 }
 main>:nth-child(5)>div>:nth-child(6){
     position: relative;
     top: -100px;
-    left: 30px;
+    left: 10%;
 }
 main>:nth-child(6){
     background-color: #74B9FF;
@@ -664,7 +664,7 @@ main>:nth-child(7)>:nth-child(2)>:nth-child(1)>p{
 main>:nth-child(7)>:nth-child(2)>:nth-child(4)>img{
     position: relative;
     top: 125px;
-    left: 742px;
+    left: 55%;
 }
 main>:nth-child(7)>:nth-child(2)>:nth-child(3)>h4{
     position: relative;
@@ -705,20 +705,20 @@ main>:nth-child(7)>:nth-child(2)>:nth-child(3)>p{
 main>:nth-child(7)>:nth-child(3)>:nth-child(2){
     position: absolute;
     bottom: 132px;
-    left: 350px;
+    left: 180px;
     width: 300px;
-    height: 350px;
-    background: rgba(116, 185, 255, 0.4);
+    height: 300px;
+    background: url("img/1.png");
     border-radius: 30px;
 }
 main>:nth-child(7)>:nth-child(3)>:nth-child(3){
     position: absolute;
-    bottom: 110px;
-    left: 0;
+    bottom: 132px;
+    width: 300px;
+    height: 300px;
     right: 0;
+    left: 0;
     margin: auto;
-    width: 350px;
-    height: 400px;
     background-color: black;
     border-radius: 30px;
     z-index: 1;
@@ -726,9 +726,9 @@ main>:nth-child(7)>:nth-child(3)>:nth-child(3){
 main>:nth-child(7)>:nth-child(3)>:nth-child(4){
     position: absolute;
     bottom: 132px;
-    right: 350px;
+    right: 180px;
     width: 300px;
-    height: 350px;
+    height: 300px;
     background: rgba(116, 185, 255, 0.4);
     border-radius: 30px;
 }
@@ -775,6 +775,7 @@ main>:nth-child(7)>:nth-child(3)>:nth-child(4)>h3{
 }
 footer{
     position: relative;
+    top: 100px;
     background: rgba(69, 170, 242, 0.4);
     height: 75vh;
 }
@@ -960,12 +961,27 @@ main>:nth-child(7)>:nth-child(3){
 main>:nth-child(1)>nav>button>a:hover {
     margin-right: 5px;
 }
-.viewAssignment>a{
+#divAssignment{
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    top: 625px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+#divAssignment p{
     position: relative;
-    top: 250px;
-    text-decoration: none;
-    font-size: 24px;
-    left: 65px;
+    display: inline-block;
+    line-height: 0;
+    top: 7px;
+    font-size: 20px;
+}
+#divAssignment:hover{
+    background: #9eeaf9;
 }
 /*#typingText{
     font-size: 24px;
@@ -1001,7 +1017,7 @@ main>:nth-child(1)>nav>button>a:hover {
         left: 151px;
     }
 }*/
-@media all and (min-width: 769px) and (max-width: 1024px){
+@media all and (max-width: 1024px){
     main>:nth-child(1)>article>:nth-child(2) {
         left: 130px;
         top: 222px;
@@ -1299,21 +1315,24 @@ main>:nth-child(1)>nav>button>a:hover {
         font-size: 36px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(2) {
-        bottom: 145px;
-        left: 216px;
+        bottom: 160px;
+        left: 8%;
         width: 250px;
-        height: 310px;
+        height: 250px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(4) {
-        bottom: 145px;
-        right: 216px;
+        bottom: 160px;
+        right: 8%;
         width: 250px;
-        height: 310px;
+        height: 250px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(3) {
-        bottom: 130px;
-        width: 290px;
-        height: 340px;
+        bottom: 160px;
+        width: 250px;
+        height: 250px;
+    }
+    #divAssignment{
+        top: 535px;
     }
     #Get\ in\ touch {
         top: -5px;
@@ -1409,7 +1428,7 @@ main>:nth-child(1)>nav>button>a:hover {
         margin-left: 75px;
     }
 }
-@media all and (min-width: 427px) and (max-width: 768px){
+@media all and (max-width: 768px){
     header>nav>menu>li>a {
         font-size: 14px;
     }
@@ -1474,7 +1493,7 @@ main>:nth-child(1)>nav>button>a:hover {
         top: 361px;
     }
     main>:nth-child(1) {
-        height: 70vh;
+        height: 100vh;
     }
     #AboutMe {
         left: 41%;
@@ -1768,21 +1787,24 @@ main>:nth-child(1)>nav>button>a:hover {
         font-size: 36px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(4) {
-        top: 132px;
-        right: 105px;
-        width: 230px;
-        height: 270px;
+        top: 123px;
+        right: 5%;
+        width: 220px;
+        height: 220px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(3) {
         top: -50px;
-        width: 260px;
-        height: 300px;
+        width: 220px;
+        height: 220px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(2) {
-        top: 132px;
-        left: 105px;
-        width: 230px;
-        height: 270px;
+        top: 123px;
+        left: 5%;
+        width: 220px;
+        height: 220px;
+    }
+    #divAssignment{
+        top: 386px;
     }
     main>:nth-child(7) {
         height: 170vh;
@@ -1791,6 +1813,9 @@ main>:nth-child(1)>nav>button>a:hover {
         left: 39%;
         top: -5px;
         font-size: 36px;
+    }
+    footer{
+        top: 40px;
     }
     footer>:nth-child(2)>aside>img {
         top: 63px;
@@ -2008,6 +2033,7 @@ main>:nth-child(1)>nav>button>a:hover {
         font-size: 18px;
     }
     main>:nth-child(3)>h1 {
+        top: 0;
         left: 24%;
         font-size: 30px;
     }
@@ -2269,21 +2295,30 @@ main>:nth-child(1)>nav>button>a:hover {
         height: 100vh;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(3) {
-        width: 162px;
-        height: 200px;
-        top: 218px;
+        width: 130px;
+        height: 130px;
+        top: 150px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(2) {
-        top: 329px;
-        left: 237px;
-        width: 140px;
-        height: 173px;
+        top: 280px;
+        left: 2%;
+        width: 130px;
+        height: 130px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(4) {
-        top: 329px;
-        right: 237px;
-        width: 140px;
-        height: 173px;
+        top: 280px;
+        right: 2%;
+        width: 130px;
+        height: 130px;
+    }
+    #divAssignment{
+        top: 440px;
+        width: 80px;
+        height: 40px;
+    }
+    #divAssignment p{
+        font-size: 18px;
+        top: 5px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(3)>h3 {
         top: 124px;
@@ -2426,6 +2461,9 @@ main>:nth-child(1)>nav>button>a:hover {
     main>:nth-child(1)>nav>button {
         top: 192px;
     }
+    main{
+        overflow: hidden;
+    }
     #sosial {
         left: 55px;
     }
@@ -2518,21 +2556,30 @@ main>:nth-child(1)>nav>button>a:hover {
         left: 8%;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(3) {
-        width: 145px;
-        height: 170px;
-        top: 63px;
+        width: 110px;
+        height: 110px;
+        top: 40px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(2) {
-        top: 264px;
-        left: 215px;
-        width: 130px;
-        height: 150px;
+        top: 237px;
+        left: 2%;
+        width: 110px;
+        height: 110px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(4) {
-        top: 264px;
-        right: 215px;
-        width: 130px;
-        height: 150px;
+        top: 237px;
+        right: 2%;
+        width: 110px;
+        height: 110px;
+    }
+    #divAssignment {
+        top: 359px;
+        width: 60px;
+        height: 30px;
+    }
+    #divAssignment p {
+        font-size: 14px;
+        top: 2px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(3)>h3 {
         top: 106px;
@@ -2800,21 +2847,24 @@ main>:nth-child(1)>nav>button>a:hover {
         top: 91px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(3) {
-        width: 120px;
-        height: 145px;
-        top: -20px;
+        width: 100px;
+        height: 100px;
+        top: -60px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(2) {
-        top: 232px;
-        left: 180px;
-        width: 105px;
-        height: 130px;
+        top: 190px;
+        left: 1%;
+        width: 100px;
+        height: 100px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(4) {
-        top: 232px;
-        right: 180px;
-        width: 105px;
-        height: 130px;
+        top: 190px;
+        right: 1%;
+        width: 100px;
+        height: 100px;
+    }
+    #divAssignment {
+        top: 306px;
     }
     main>:nth-child(7)>:nth-child(3)>:nth-child(3)>h3 {
         top: 90px;
