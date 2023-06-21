@@ -7,140 +7,139 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
 
 </head>
-<body onload="getPageContent('home')">
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Thogakade</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" onclick="getPageContent('home')">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" onclick="getPageContent('customer')">Customer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" onclick="getPageContent('item')">Item</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" onclick="getPageContent('order')">Order Details</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div id="content"></div>
-<script src="../../../assest/jquery/jquery-3.7.0.min.js"></script>
-<script>
-
-    let mainArray = [];
-    let itemArray = [];
-
-    var pages = {
-        'home' : `<div><div class="container text-body">
-    <div class="row mt-4">
-        <div class="col-sm-6 col-12">
-            <p style="font-size: 24px; color: #FFFFFF; background-color: #45AAF2; text-align: center; height: 50px; padding-top: 8px">Customer Details</p>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputCusId" class="form-label">Customer ID</label>
-                    <input type="email" class="form-control" id="exampleInputCusId" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">Customer Name</label>
-                    <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputAddress" class="form-label">Customer Address</label>
-                    <input type="email" class="form-control" id="exampleInputAddress" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputContact" class="form-label">Customer Contact</label>
-                    <input type="email" class="form-control" id="exampleInputContact" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputSalary" class="form-label">Customer Salary</label>
-                    <input type="email" class="form-control" id="exampleInputSalary" aria-describedby="emailHelp">
-                </div>
-                <div style="height: 35px"></div>
-                <div class="mb-3">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; background-color: blue">
-                                Item Code
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-            </form>
-        </div>
-        <div class="col-sm-6 col-12">
-            <p style="font-size: 24px; color: #FFFFFF; background-color: #45AAF2; text-align: center; height: 50px; padding-top: 8px" data-bs-theme="dark">Order Details</p>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputOrderId" class="form-label">Order ID</label>
-                    <input type="email" class="form-control" id="exampleInputOrderId" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputQty" class="form-label">Quantity</label>
-                    <input type="email" class="form-control" id="exampleInputQty" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputDate" class="form-label">Date</label>
-                    <input type="email" class="form-control" id="exampleInputDate" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputTotalPrice" class="form-label">Total</label>
-                    <input type="email" class="form-control" id="exampleInputTotalPrice" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputCash" class="form-label">Cash</label>
-                    <input type="email" class="form-control" id="exampleInputCash" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputBalance" class="form-label">Balance</label>
-                    <input type="email" class="form-control" id="exampleInputBalance" aria-describedby="emailHelp">
-                </div>
-                <button type="submit" class="btn btn-primary" style="text-align: center; background-color: #ff253a; height: 40px; width: 150px;position: relative; left: 200px">Place Order</button>
-            </form>
-        </div>
-    </div>
-</div>
-                  <div class="container text-body mt-3">
-        <div class="row justify-content-center">
-            <div class="col-12" style="width: 1500px">
-                <table class="table">
-                    <thead>
-                    <tr style="background-color: #45AAF2; color: #FFFFFF">
-                        <th scope="col">Item Code</th>
-                        <th scope="col">Item Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    </tbody>
-                </table>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Thogakade</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item" id="clkHome">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item" id="clkCustomer">
+                        <a class="nav-link active" href="#" >Customer</a>
+                    </li>
+                    <li class="nav-item" id="clkItem">
+                        <a class="nav-link active" aria-current="page" href="#">Item</a>
+                    </li>
+                    <li class="nav-item" id="clkOrder">
+                        <a class="nav-link active" aria-current="page" href="#">Order Details</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div></div>`,
-        'customer' : `<div class="container text-center">
-    <div class="row">
-        <div class="col">
+    </nav>
+</header>
+
+<!--//Dashboard-->
+<main id="dashBordFrom">
+    <div><div class="container text-body">
+        <div class="row mt-4">
+            <div class="col-sm-6 col-12">
+                <p style="font-size: 24px; color: #FFFFFF; background-color: #45AAF2; text-align: center; height: 50px; padding-top: 8px">Customer Details</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputCusId" class="form-label">Customer ID</label>
+                        <input type="email" class="form-control" id="exampleInputCustomerId" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Customer Name</label>
+                        <input type="email" class="form-control" id="exampleInputCustomerName" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputAddress" class="form-label">Customer Address</label>
+                        <input type="email" class="form-control" id="exampleInputCustomerAddress" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputContact" class="form-label">Customer Contact</label>
+                        <input type="email" class="form-control" id="exampleInputCustomerContact" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputSalary" class="form-label">Customer Salary</label>
+                        <input type="email" class="form-control" id="exampleInputCustomerSalary" aria-describedby="emailHelp">
+                    </div>
+                    <div style="height: 35px"></div>
+                    <div class="mb-3">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; background-color: blue">
+                                    Item Code
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-sm-6 col-12">
+                <p style="font-size: 24px; color: #FFFFFF; background-color: #45AAF2; text-align: center; height: 50px; padding-top: 8px" data-bs-theme="dark">Order Details</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputOrderId" class="form-label">Order ID</label>
+                        <input type="email" class="form-control" id="exampleInputDashOrderId" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputQty" class="form-label">Quantity</label>
+                        <input type="email" class="form-control" id="exampleInputItemQty" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputDate" class="form-label">Date</label>
+                        <input type="email" class="form-control" id="exampleInputDashDate" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputTotalPrice" class="form-label">Total</label>
+                        <input type="email" class="form-control" id="exampleInputTotalPrice" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputCash" class="form-label">Cash</label>
+                        <input type="email" class="form-control" id="exampleInputDashCash" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputBalance" class="form-label">Balance</label>
+                        <input type="email" class="form-control" id="exampleInputBalance" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="text-align: center; background-color: #ff253a; height: 40px; width: 150px;position: relative; left: 200px">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+        <div class="container text-body mt-3">
+            <div class="row justify-content-center">
+                <div class="col-12" style="width: 1500px">
+                    <table class="table">
+                        <thead>
+                        <tr style="background-color: #45AAF2; color: #FFFFFF">
+                            <th scope="col">Item Code</th>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div></div>
+</main>
+
+<!--Customer Form-->
+<main id="customerForm">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
                 <p style="font-size: 24px; color: #FFFFFF; background-color: #45AAF2; text-align: center;height: 60px;padding-top: 8px;margin-top: 20px">Customer Details</p>
                 <div class="container text-center">
                     <div class="row">
@@ -182,11 +181,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
-</div>
-                      <div class="container text-body">
-    <div class="row justify-content-center">
+    <div class="container text-body">
+        <div class="row justify-content-center">
             <table class="table col-12">
                 <thead>
                 <tr style="background-color: #45AAF2; color: #FFFFFF">
@@ -201,10 +200,14 @@
                 </tbody>
             </table>
         </div>
-    </div>`,
-        'item' : `<div class="container text-center">
-    <div class="row">
-        <div class="col">
+    </div>
+</main>
+
+<!--Item Form-->
+<main id="itemForm">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
                 <p style="font-size: 24px; color: #FFFFFF; background-color: #45AAF2; text-align: center;height: 60px;padding-top: 8px;margin-top: 20px">Item Details</p>
                 <div class="container text-center">
                     <div class="row">
@@ -244,11 +247,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
-</div>
-                  <div class="container text-body">
-    <div class="row justify-content-center">
+    <div class="container text-body">
+        <div class="row justify-content-center">
             <table class="table">
                 <thead>
                 <tr style="background-color: #45AAF2; color: #FFFFFF">
@@ -262,10 +265,14 @@
                 </tbody>
             </table>
         </div>
-    </div>`,
-        'order' : `<div class="container text-center">
-    <div class="row">
-        <div class="col align-self-center">
+    </div>
+</main>
+
+<!--OrderDetails form-->
+<main id="orderDetailsForm">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col align-self-center">
                 <p style="font-size: 24px; color: #FFFFFF; background-color: #45AAF2; text-align: center;height: 60px;padding-top: 8px;margin-top: 20px">Order Details</p>
                 <div class="container text-center">
                     <div class="row">
@@ -307,11 +314,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
-</div>
-                   <div class="container text-body">
-    <div class="row justify-content-center">
+    <div class="container text-body">
+        <div class="row justify-content-center">
             <table class="table">
                 <thead>
                 <tr style="background-color: #45AAF2; color: #FFFFFF">
@@ -342,330 +349,12 @@
                 </tr>
                 </tbody>
             </table>
+        </div>
     </div>
-</div>`
+</main>
 
-    };
-
-    function getPageContent(page) {
-        var contentToReturn;
-
-        switch (page) {
-            case 'home' :
-                contentToReturn = pages.home;
-                break;
-            case 'customer' :
-                contentToReturn = pages.customer;
-                break;
-            case 'item' :
-                contentToReturn = pages.item;
-                break;
-            case 'order' :
-                contentToReturn = pages.order;
-                break;
-            default :
-                contentToReturn = pages.home;
-                break;
-        }
-        document.getElementById('content').innerHTML = contentToReturn;
-
-        function search(){
-            $("#tbl").empty();
-            for (let i = 0; i < mainArray.length; i++) {
-                let id = mainArray[i].id;
-                let name = mainArray[i].name;
-                let address = mainArray[i].address;
-                let contact = mainArray[i].contact;
-                let salary = mainArray[i].salary;
-
-                let row = `<tr>
-                           <td>${id}</td>
-                           <td>${name}</td>
-                           <td>${address}</td>
-                           <td>${contact}</td>
-                           <td>${salary}</td>
-                       </tr>`;
-
-                $("#tbl").append(row);
-                bindTrEvent();
-            }
-        }
-
-        $("#search").click(function () {
-            search();
-        });
-
-        $("#update").click(function () {
-            let id = $("#exampleInputCusId").val();
-            let name = $("#exampleInputName").val();
-            let address = $("#exampleInputAddress").val();
-            let contact = $("#exampleInputContact").val();
-            let salary = $("#exampleInputSalary").val();
-
-            let customer = {
-                id:id,
-                name:name,
-                address:address,
-                contact:contact,
-                salary:salary
-            };
-
-            mainArray.push(customer);
-        });
-
-        function bindTrEvent(){
-            $("#tbl>tr").click(function () {
-                let id = $(this).children().eq(0).text();
-                let name = $(this).children().eq(1).text();
-                let address = $(this).children().eq(2).text();
-                let contact = $(this).children().eq(3).text();
-                let salary = $(this).children().eq(4).text();
-
-                $("#exampleInputCusId").val(id);
-                $("#exampleInputName").val(name);
-                $("#exampleInputAddress").val(address);
-                $("#exampleInputContact").val(contact);
-                $("#exampleInputSalary").val(salary);
-            });
-        }
-
-        $("#delete").click(function () {
-            let id1 = $("#exampleInputCusId").val();
-            for (let i = 0; i < mainArray.length; i++) {
-                if (mainArray[i].id == id1){
-                    mainArray.splice(i,1);
-                }
-            }
-            search();
-        });
-
-        //Item form functions
-
-        $("#addItem").click(function () {
-           checkItem();
-        });
-
-        function checkItem(){
-            let tempCode = $("#exampleInputItemCode").val();
-            if (itemArray.length==0){
-                let code = $("#exampleInputItemCode").val();
-                let name = $("#exampleInputItemName").val();
-                let price = $("#exampleInputPrice").val();
-                let qty = $("#exampleInputQty").val();
-
-                let item = {
-                    code:code,
-                    name:name,
-                    price:price,
-                    qty:qty,
-                };
-
-                itemArray.push(item);
-                itemSearch();
-                clearText();
-            }else {
-                for (let i = 0; i < itemArray.length; i++) {
-                    if (itemArray[i].code == tempCode) {
-                        alert("This Item already exists.!");
-                        break;
-                    } else {
-                        let code = $("#exampleInputItemCode").val();
-                        let name = $("#exampleInputItemName").val();
-                        let price = $("#exampleInputPrice").val();
-                        let qty = $("#exampleInputQty").val();
-
-                        let item = {
-                            code: code,
-                            name: name,
-                            price: price,
-                            qty: qty,
-                        };
-
-                        itemArray.push(item);
-                        itemSearch();
-                        clearText();
-                    }
-                }
-            }
-        }
-
-        $("#exampleInputItemCode,#exampleInputItemName,#exampleInputPrice,#exampleInputQty").keydown(function (e) {
-            if (e.key=="Tab"){
-                e.preventDefault();
-            }
-        });
-
-        $("#exampleInputItemCode").keydown(function (e){
-            let code = $("#exampleInputItemCode").val();
-            let checkCode = /^(C00-)[0-9]{3}$/;
-            let ok = checkCode.test(code);
-
-                if (e.key == "Enter"){
-                    if (ok){
-                        $("#exampleInputItemName").focus();
-                        $("#exampleInputItemCode").css("border-color","black");
-                        $("#addItem").prop("disabled",false);
-                        $("#searchItem").prop("disabled",false);
-                        $("#deleteItem").prop("disabled",false);
-                        $("#updateItem").prop("disabled",false);
-                    }else {
-                        $("#exampleInputItemCode").css("border-color","red");
-                        $("#addItem").prop("disabled",true);
-                        $("#searchItem").prop("disabled",true);
-                        $("#deleteItem").prop("disabled",true);
-                        $("#updateItem").prop("disabled",true);
-                    }
-                }
-        });
-        $("#exampleInputItemName").keydown(function (e){
-            let itemName = $("#exampleInputItemName").val();
-            let checkName = /[a-z]{3}/;
-            let ok = checkName.test(itemName);
-
-            if (e.key == "Enter"){
-                if (ok) {
-                    $("#exampleInputPrice").focus();
-                    $("#exampleInputItemName").css("border-color","black");
-                    $("#addItem").prop("disabled",false);
-                    $("#searchItem").prop("disabled",false);
-                    $("#deleteItem").prop("disabled",false);
-                    $("#updateItem").prop("disabled",false);
-                }else{
-                    $("#exampleInputItemName").css("border-color","red");
-                    $("#addItem").prop("disabled",true);
-                    $("#searchItem").prop("disabled",true);
-                    $("#deleteItem").prop("disabled",true);
-                    $("#updateItem").prop("disabled",true);
-                }
-            }
-        });
-        $("#exampleInputPrice").keydown(function (e){
-            let price = $("#exampleInputPrice").val();
-            let checkPrice = /^[0-9]{2}/;
-            let ok = checkPrice.test(price);
-
-            if (e.key == "Enter"){
-                if (ok){
-                    $("#exampleInputQty").focus();
-                    $("#exampleInputPrice").css("border-color","black");
-                    $("#addItem").prop("disabled",false);
-                    $("#searchItem").prop("disabled",false);
-                    $("#deleteItem").prop("disabled",false);
-                    $("#updateItem").prop("disabled",false);
-                }else {
-                    $("#exampleInputPrice").css("border-color","red");
-                    $("#addItem").prop("disabled",true);
-                    $("#searchItem").prop("disabled",true);
-                    $("#deleteItem").prop("disabled",true);
-                    $("#updateItem").prop("disabled",true);
-                }
-            }
-        });
-        $("#exampleInputQty").keydown(function (e){
-            let qty = $("#exampleInputQty").val();
-            let checkQty = /^[0-9]{1}/;
-            let ok = checkQty.test(qty);
-
-            if (e.key == "Enter"){
-                if (ok){
-                    checkItem();
-                    $("#exampleInputQty").css("border-color","black");
-                    $("#addItem").prop("disabled",false);
-                    $("#searchItem").prop("disabled",false);
-                    $("#deleteItem").prop("disabled",false);
-                    $("#updateItem").prop("disabled",false);
-                }else {
-                    $("#exampleInputQty").css("border-color","red");
-                    $("#addItem").prop("disabled",true);
-                    $("#searchItem").prop("disabled",true);
-                    $("#deleteItem").prop("disabled",true);
-                    $("#updateItem").prop("disabled",true);
-                }
-            }
-        });
-
-        function clearText(){
-            $("#exampleInputItemCode,#exampleInputItemName,#exampleInputPrice,#exampleInputQty").val("");
-            $("#exampleInputItemCode").focus();
-        }
-
-        function itemSearch(){
-            $("#tblItem").empty();
-            for (let i = 0; i < itemArray.length; i++) {
-                let code = itemArray[i].code;
-                let name = itemArray[i].name;
-                let price = itemArray[i].price;
-                let qty = itemArray[i].qty;
-
-                let row = `<tr>
-                           <td>${code}</td>
-                           <td>${name}</td>
-                           <td>${price}</td>
-                           <td>${qty}</td>
-                       </tr>`;
-
-                $("#tblItem").append(row);
-                itemBindTrEvent()
-            }
-        }
-
-        $("#searchItem").click(function () {
-            itemSearch();
-        });
-
-        function itemBindTrEvent(){
-            $("#tblItem>tr").click(function () {
-                let code = $(this).children().eq(0).text();
-                let name = $(this).children().eq(1).text();
-                let price = $(this).children().eq(2).text();
-                let qty = $(this).children().eq(3).text();
-
-                $("#exampleInputItemCode").val(code);
-                $("#exampleInputItemName").val(name);
-                $("#exampleInputPrice").val(price);
-                $("#exampleInputQty").val(qty);
-            });
-        }
-
-        $("#deleteItem").click(function () {
-            let tempCode = $("#exampleInputItemCode").val();
-
-            let ok = confirm("Do you want delete.!");
-
-            if (ok){
-                for (let i = 0; i < itemArray.length; i++) {
-                    if (itemArray[i].code == tempCode){
-                        itemArray.splice(i,1);
-                    }
-                }
-                itemSearch();
-                clearText();
-            }
-        });
-
-        $("#updateItem").click(function () {
-            let tempCode = $("#exampleInputItemCode").val();
-
-            let ok = confirm("Do you want update.!");
-            if (ok){
-                for (let i = 0; i < itemArray.length; i++) {
-                    if (itemArray[i].code == tempCode){
-                        itemArray[i].name = $("#exampleInputItemName").val();
-                        itemArray[i].price = $("#exampleInputPrice").val();
-                        itemArray[i].qty =  $("#exampleInputQty").val();
-                        itemSearch();
-                        clearText();
-                        return;
-                    }else {
-                        alert("Wrong item Code..");
-                    }
-                }
-            }
-        });
-    }
-
-
-</script>
+<script src="../../../assest/jquery/jquery-3.7.0.min.js"></script>
 <script src="assets/js/bootstrap.bundle.js"></script>
+<script src="controllers/navigationController.js"></script>
 </body>
 </html>
