@@ -103,9 +103,12 @@ $("#deleteItem").click(function () {
         for (let i = 0; i < itemDB.length; i++) {
             if (itemDB[i].code == tempCode) {
                 itemDB.splice(i, 1);
+                itemSearch();
+                clearText();
+                return;
             }
         }
-        itemSearch();
+        alert("wrong item code");
         clearText();
     }
 });
@@ -128,5 +131,6 @@ $("#updateItem").click(function () {
             }
         }
         alert("wrong item code");
+        clearText();
     }
 });
