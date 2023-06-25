@@ -66,11 +66,7 @@
                                 <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; background-color: blue">
                                     Item Code
                                 </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                <ul id="ulItemCode" class="dropdown-menu dropdown-menu-dark"></ul>
                             </li>
                         </ul>
                     </div>
@@ -86,11 +82,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputQty" class="form-label">Quantity</label>
-                        <input type="email" class="form-control" id="exampleInputItemQty" aria-describedby="emailHelp">
+                        <input type="number" class="form-control" id="exampleInputItemQty" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputDate" class="form-label">Date</label>
-                        <input type="email" class="form-control" id="exampleInputDashDate" aria-describedby="emailHelp">
+                        <input type="date" class="form-control" id="exampleInputDashDate" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputTotalPrice" class="form-label">Total</label>
@@ -121,14 +117,7 @@
                             <th scope="col">Quantity</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        </tbody>
+                        <tbody id="dashTable"></tbody>
                     </table>
                 </div>
             </div>

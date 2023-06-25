@@ -1,3 +1,6 @@
+searchItemCode();
+
+//place order
 $("#placeOrder").click(function () {
     let id = $("#exampleInputCustomerId").val();
     if (customerDB.length == 0){
@@ -76,5 +79,38 @@ $("#placeOrder").click(function () {
 
         orderDB.push(newOrder);
     }
-    
+});
+
+//load item code
+function searchItemCode(){
+    for (let i = 0; i < itemDB.length; i++) {
+        let list = `<li>${itemDB[i].code}</li>`;
+        $("#ulItemCode").append(list);
+    }
+}
+
+let demoPrice;
+
+//load table with selected item code
+$("#ulItemCode>li").click(function () {
+    let code = $(this).text();
+    console.log(code);
+    for (let i = 0; i < itemDB.length; i++) {
+        if (itemDB[i].code == code){
+            let name = itemDB[i].name;
+            let price = itemDB[i].price;
+            demoPrice = itemDB[i].price;
+            let qty = itemDB[i].qty;
+
+            let row = `<tr>
+                           <td>${code}</td>
+                           <td>${name}</td>
+                           <td>${price}</td>
+                           <td>${qty}</td>
+                       </tr>`;
+
+            $("#dashTable").append(row);
+            return;
+        }
+    }
 });

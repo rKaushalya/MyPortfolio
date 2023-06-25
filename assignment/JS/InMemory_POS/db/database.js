@@ -10,5 +10,6 @@ var itemDB = [
 ];
 
 var orderDB = [
-    {orderId:"O00-001",qty:2,date:"2023/06/24",price:400,cash:500,balance:100}
+    {orderId:"O00-001",qty:2,date:"2023/06/24",price:400,cash:500,balance:100},
+    {orderId:"O00-002",qty:3,date:"2023/06/24",price:300,cash:500,balance:200}
 ];
