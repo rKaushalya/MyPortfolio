@@ -55,7 +55,13 @@ $("#placeOrder").click(function () {
         newOrder.cash = cash;
         newOrder.balance = balance;
 
-        orderDB.push(newOrder);
+        if (demoQty > qty){
+            orderDB.push(newOrder);
+        }else {
+            $("#exampleInputItemQty").css("border-color", "red");
+            $("#exampleInputItemQty").focus();
+        }
+
     }else {
         for (let i = 0; i < orderDB.length; i++) {
             if (orderDB[i].orderId == oId){
@@ -77,7 +83,13 @@ $("#placeOrder").click(function () {
         newOrder.cash = cash;
         newOrder.balance = balance;
 
-        orderDB.push(newOrder);
+        if (demoQty > qty){
+            orderDB.push(newOrder);
+        }else {
+            $("#exampleInputItemQty").css("border-color", "red");
+            $("#exampleInputItemQty").focus();
+        }
+        $("#dashTable").empty();
     }
 });
 
@@ -90,6 +102,7 @@ function searchItemCode(){
 }
 
 let demoPrice;
+let demoQty;
 
 //load table with selected item code
 $("#ulItemCode>li").click(function () {
@@ -101,6 +114,7 @@ $("#ulItemCode>li").click(function () {
             let price = itemDB[i].price;
             demoPrice = itemDB[i].price;
             let qty = itemDB[i].qty;
+            demoQty = itemDB[i].qty;
 
             let row = `<tr>
                            <td>${code}</td>
