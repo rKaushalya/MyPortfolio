@@ -104,7 +104,7 @@
                         <label for="exampleInputBalance" class="form-label">Balance</label>
                         <input type="email" class="form-control" id="exampleInputBalance" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn btn-primary" style="text-align: center; background-color: #ff253a; height: 40px; width: 150px;position: relative; left: 200px">Place Order</button>
+                    <button id="placeOrder" type="submit" class="btn btn-primary" style="text-align: center; background-color: #ff253a; height: 40px; width: 150px;position: relative; left: 200px">Place Order</button>
                 </form>
             </div>
         </div>
@@ -358,10 +358,13 @@
 <script src="controllers/navigationController.js"></script>
 <script src="models/item.js"></script>
 <script src="models/customer.js"></script>
+<script src="models/order.js"></script>
 <script src="db/database.js"></script>
 <script src="controllers/validations/itemValidations.js"></script>
 <script src="controllers/validations/customerValidations.js"></script>
 <script src="controllers/itemController.js"></script>
 <script src="controllers/customerController.js"></script>
+<script src="controllers/validations/placeOrderValidation.js"></script>
+<script src="controllers/placeOrderController.js"></script>
 </body>
 </html>

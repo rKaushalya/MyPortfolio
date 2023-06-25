@@ -30,21 +30,6 @@ $("#search").click(function () {
 
 // update customer
 $("#update").click(function () {
-    /*let id = $("#exampleInputCusId").val();
-    let name = $("#exampleInputName").val();
-    let address = $("#exampleInputAddress").val();
-    let contact = $("#exampleInputContact").val();
-    let salary = $("#exampleInputSalary").val();
-
-    let customer = {
-        id: id,
-        name: name,
-        address: address,
-        contact: contact,
-        salary: salary
-    };
-
-    mainArray.push(customer);*/
     let tempId = $("#exampleInputCusId").val();
 
     let ok = confirm("Do you want update.!");

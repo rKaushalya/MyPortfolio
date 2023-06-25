@@ -9,4 +9,6 @@ var itemDB = [
     {code:"I00-002",name:"kakulu hal",price:100,qty:250}
 ];
 
-var orderDB = [];
+var orderDB = [
+    {orderId:"O00-001",qty:2,date:"2023/06/24",price:400,cash:500,balance:100}
+];
