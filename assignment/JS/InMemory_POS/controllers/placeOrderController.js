@@ -85,6 +85,7 @@ $("#placeOrder").click(function () {
 
         if (demoQty > qty){
             orderDB.push(newOrder);
+            clearDash();
         }else {
             $("#exampleInputItemQty").css("border-color", "red");
             $("#exampleInputItemQty").focus();
@@ -128,3 +129,8 @@ $("#ulItemCode>li").click(function () {
         }
     }
 });
+
+function clearDash(){
+    $("#exampleInputCustomerId,#exampleInputCustomerName,#exampleInputCustomerAddress,#exampleInputCustomerContact,#exampleInputCustomerSalary").val("");
+    $("#exampleInputDashOrderId,#exampleInputItemQty,#exampleInputDashDate,#exampleInputTotalPrice,#exampleInputDashCash,#exampleInputBalance").val("");
+}

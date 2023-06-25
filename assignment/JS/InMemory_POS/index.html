@@ -293,11 +293,11 @@
                         <div class="col-3">
                             <div style="display: flex; flex-direction: column">
                                 <div style="height: 100px"></div>
-                                <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 50px;font-size: 20px">search</button>
+                                <button id="orderSearch" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 50px;font-size: 20px">search</button>
                                 <div style="height: 50px"></div>
-                                <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 50px;font-size: 20px;background-color: green">Update</button>
+                                <button id="orderUpdate" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 50px;font-size: 20px;background-color: green">Update</button>
                                 <div style="height: 50px"></div>
-                                <button type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 50px;font-size: 20px;background-color: #ff253a">Delete</button>
+                                <button id="orderDelete" type="submit" class="btn btn-primary" style="text-align: center; width: 120px; height: 50px;font-size: 20px;background-color: #ff253a">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -317,25 +317,7 @@
                     <th scope="col">Cash</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-                </tbody>
+                <tbody id="detailTbl"></tbody>
             </table>
         </div>
     </div>
@@ -354,5 +336,6 @@
 <script src="controllers/customerController.js"></script>
 <script src="controllers/validations/placeOrderValidation.js"></script>
 <script src="controllers/placeOrderController.js"></script>
+<script src="controllers/orderDetailsController.js"></script>
 </body>
 </html>
