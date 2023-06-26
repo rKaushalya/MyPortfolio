@@ -1,3 +1,16 @@
+//canvas animation
+window.onload = function(){
+    Particles.init({
+        selector: '.canvasTest',
+        maxParticles: 150,
+        connectParticles: 'true',
+        speed:3,
+        minDistance: 140,
+        sizeVariations: 4,
+        color: '#464dd4'
+    });
+}
+
 //Implement Loader
 let loader = document.getElementById("loader");
 window.addEventListener("load", function () {
