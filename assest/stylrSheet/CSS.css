@@ -63,7 +63,7 @@ main>:nth-child(1){
 }
 #sample{
     height: 91vh;
-    width: 100vw;
+    width: 100%;
     position: absolute;
 }
 main>:nth-child(1)>aside>img{
