@@ -1,7 +1,7 @@
 //Implement Loader
 let loader = document.getElementById("loader");
 window.addEventListener("load", function () {
-    console.log("Page Loaded.!")
+    console.log("Page Loaded.!");
 
     loader.style.display = 'none';
 });

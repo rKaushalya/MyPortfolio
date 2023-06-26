@@ -34,6 +34,7 @@ main{
     top: 55px;
 }
 #loader{
+    z-index: 5;
     position: fixed;
     top: 0;
     right: 0;
@@ -44,6 +45,7 @@ main{
 }
 #loader>div{
     position: absolute;
+    height: 20vh;
     top: 0;
     left: 0;
     right: 0;
