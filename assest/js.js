@@ -1,4 +1,12 @@
+//Implement Loader
+let loader = document.getElementById("loader");
+window.addEventListener("load", function () {
+    console.log("Page Loaded.!")
 
+    loader.style.display = 'none';
+});
+
+//Implement Typing Text
 const text = document.getElementById("typingText");
 
 const textLoad = ()=> {

@@ -33,6 +33,26 @@ main{
     position: relative;
     top: 55px;
 }
+#loader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #f9f5f1;
+    transition: opacity 2s;
+}
+#loader>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("gif/loading.gif");
+    background-position: center;
+    background-size: cover;
+}
 main>:nth-child(1){
     height: 93vh;
     background-color: #eeeeee;
