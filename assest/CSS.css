@@ -45,7 +45,8 @@ main{
 }
 #loader>div{
     position: absolute;
-    height: 20vh;
+    height: 40%;
+    width: 40%;
     top: 0;
     left: 0;
     right: 0;
