@@ -152,7 +152,7 @@ main>:nth-child(2){
 main>:nth-child(2)>h2{
     position: relative;
     display: inline-block;
-    left: 448px;
+    left: 480px;
     top: 80px;
     font-style: normal;
     font-weight: 400;
@@ -163,7 +163,7 @@ main>:nth-child(2)>h2{
 main>:nth-child(2)>h3{
     position: relative;
     display: inline-block;
-    left: 266px;
+    left: 292px;
     top: 120px;
     font-style: normal;
     font-weight: 400;
@@ -197,7 +197,7 @@ main>:nth-child(2)>:nth-child(6){
     position: relative;
     display: inline-block;
     top: 200px;
-    left: 86px;
+    left: 3%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -208,7 +208,7 @@ main>:nth-child(2)>:nth-child(7){
     position: relative;
     display: inline-block;
     top: 200px;
-    left: 289px;
+    left: 16%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -216,10 +216,10 @@ main>:nth-child(2)>:nth-child(7){
     line-height: 35px;
 }
 main>:nth-child(2)>:nth-child(8){
-    position: relative;
+    position: absolute;
     display: inline-block;
-    top: 255px;
-    left: -329px;
+    top: 427px;
+    left: 43.3%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -229,8 +229,8 @@ main>:nth-child(2)>:nth-child(8){
 main>:nth-child(2)>:nth-child(9){
     position: absolute;
     display: inline-block;
-    top: 416px;
-    left: 946px;
+    top: 426px;
+    left: 68%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -240,8 +240,8 @@ main>:nth-child(2)>:nth-child(9){
 main>:nth-child(2)>:nth-child(10)>a{
     position: absolute;
     text-decoration: none;
-    bottom: 73px;
-    left: 662px;
+    bottom: 67px;
+    left: 43.3%;
     font-style: revert;
     font-weight: 550;
     font-size: 22px;
@@ -280,7 +280,7 @@ main>:nth-child(3)>:nth-child(2){
     display: inline-block;
     position: relative;
     top: 201px;
-    right: -38%;
+    right: -41%;
     background-color: #45AAF2;
     width: 550px;
     height: 118px;
@@ -1001,7 +1001,7 @@ footer>:nth-child(3)>:nth-child(5)>li>a{
 footer>:nth-child(3)>:nth-child(6){
     position: absolute;
     bottom: 65px;
-    right: 227px;
+    right: 240px;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
